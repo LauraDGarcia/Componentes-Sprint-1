@@ -24,7 +24,8 @@ name_channel1 = "Gatos carey"
 textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, trabajamos y nos comunicamos hoy."
 
 #Campañas
-
+email_Campaña = "test675@inlaze.com"
+password_campaña = "Nomelase@123!"
 
 
 

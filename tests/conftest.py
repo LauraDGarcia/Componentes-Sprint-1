@@ -54,3 +54,5 @@ def login(driver):
 @pytest.fixture
 def registro(driver):
     return signinpage(driver)
+
+#

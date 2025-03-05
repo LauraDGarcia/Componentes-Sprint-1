@@ -37,6 +37,39 @@ class panelpage(BasePage):
     BUTTON_CLOSE = (By.XPATH, "//span[contains(.,'Close')]")
     BUTTON_COPY_LINK = (By.XPATH, "(//span[contains(.,'Copy link')])[2]")
 
+    def navigate_home(self):
+        self.go_to_page("https://qa-account-commizzion-vm.inlazetest.com/login")
+
+     #Inicio de sesión 
+    def wait_for_element(self, locator):
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))  
+    
+    def select_button_email(self):
+        self.wait_for_element(self.SELECT_EMAIL).click()
+
+    def select_text_email(self):
+        self.wait_for_element(self.EMAIL).click()
+
+    def text_email(self, email):
+        element = self.wait_for_element(self.EMAIL)  # Corregido
+        element.clear() 
+        element.send_keys(email)
+
+    def select_text_password(self):
+        self.wait_for_element(self.PASSWORD).click()
+
+    def text_password(self, password):
+        element = self.wait_for_element(self.PASSWORD)
+        element.send_keys(password)
+
+    def select_checkbox(self):
+        checkbox_element = self.wait_for_element(self.BUTTON_C)
+        WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(self.BUTTON_C))  # Esperar que sea clickeable
+        checkbox_element.click() 
+
+    def select_button_login(self):
+        self.wait_for_element(self.BUTTON_LOGIN).click()
+
 
 
 

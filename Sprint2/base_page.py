@@ -76,6 +76,9 @@ class BasePage:
         actions.move_to_element(element).perform()  # Moverse al elemento
         element.click()
 
+
+    #
+
          
 
 

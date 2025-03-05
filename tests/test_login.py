@@ -35,7 +35,3 @@ def test_login(driver):
     login.confirm_password()
     login.text_password_confirm("NuevaContraseña@123")
     
-
-#def test_forgot_password(driver):
-    #login = loginpage(driver)
-    #login.navigate_recovery()

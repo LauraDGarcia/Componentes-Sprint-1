@@ -1,5 +1,5 @@
 #Login
-email = "l.garcia@inlaze.com"
+email = "test33@inlaze.com"
 password = "Nomelase@123!"
 recover = "Nomelase@123!"
 
@@ -22,6 +22,8 @@ code6 = "6"
 channel1_link = "https://x.com/KatsCarey"
 name_channel1 = "Gatos carey"
 textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, trabajamos y nos comunicamos hoy."
+
+#Campañas
 
 
 

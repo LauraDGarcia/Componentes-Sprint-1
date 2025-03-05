@@ -66,3 +66,4 @@ def test_panel_actions(driver):
     panel.select_PREVIOUS_COMPARISON_REGISTRATIONS()
     panel.select_PREVIOUS_COMPARISON_FTD()
     panel.select_PREVIOUS_COMPARISON_CPA()
+    #

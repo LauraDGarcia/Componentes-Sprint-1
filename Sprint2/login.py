@@ -120,4 +120,4 @@ class loginpage(BasePage):
         element = self.wait_for_element(self.CONFIRM_PASSWORD_NEW)
         element.send_keys(password)
 
-    
+#   

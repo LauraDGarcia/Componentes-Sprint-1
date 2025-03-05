@@ -8,6 +8,7 @@ from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.edge.service import Service as EdgeService
 from Sprint2.login import loginpage
 from Sprint2.signin import signinpage
+from selenium.webdriver.chrome.options import Options
 
 
 def pytest_addoption(parser):
@@ -23,6 +24,8 @@ def pytest_addoption(parser):
 def driver(request): 
     browser_type = request.config.getoption("--browser").lower()
     if browser_type == "chrome":
+        options = Options()
+        options.add_argument("--start-maximized")
         service = ChromeService(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service)
 

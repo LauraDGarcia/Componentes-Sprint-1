@@ -1,5 +1,5 @@
 #Login
-email = "test33@inlaze.com"
+email = "ditrouhugrecro-3032@yopmail.com"
 password = "Nomelase@123!"
 recover = "Nomelase@123!"
 
@@ -24,7 +24,7 @@ name_channel1 = "Gatos carey"
 textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, trabajamos y nos comunicamos hoy."
 
 #Campañas
-email_Campaña = "test675@inlaze.com"
+email_Campaña = "ditrouhugrecro-3032@yopmail.com"
 password_campaña = "Nomelase@123!"
 
 

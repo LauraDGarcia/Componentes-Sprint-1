@@ -91,16 +91,16 @@ class campaignspage(BasePage):
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER = (By.XPATH, "//input[contains(@placeholder,'Search country')]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES = (By.XPATH, "//button[contains(@class,'76')]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS = (By.XPATH, "//button[contains(@class,'76')]")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL = (By.XPATH, "")
-    CONFI_PREFERENCES_OBJETIVE = (By.XPATH, "")
-    CONFI_PREFERENCES_OBJ_SELECT = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES = (By.XPATH, "")
-    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT = (By.XPATH, "")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE = (By.XPATH, "//button[contains(@class,'42')]")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL = (By.XPATH, "(//button[contains(@class,'58')])[4]")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES = (By.XPATH, "//button[contains(@class,'163')]")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT = (By.XPATH, "//button[contains(@class,'224')]")
+    CONFI_PREFERENCES_OBJETIVE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[3]/div[1]/div/button")
+    CONFI_PREFERENCES_OBJ_SELECT = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[3]/div[2]/div[1]/div[1]")
+    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE = (By.XPATH, "(//button[contains(@class,'42')])[2]")
+    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL = (By.XPATH, "(//button[contains(@class,'58')])[5]")
+    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES = (By.XPATH, "//button[contains(@class,'163')]")
+    CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT = (By.XPATH, "//button[contains(@class,'224')]")
     #Configuración ayuda
     CONFIGURATION_HELP = (By.XPATH, "")
     CONFI_HELP_CALL = (By.XPATH, "")
@@ -109,6 +109,36 @@ class campaignspage(BasePage):
     CONFI_HELP_POLICIES_PRIVACY_POLICY = (By.XPATH, "")
     CONFI_HELP_POLICIES_ISO = (By.XPATH, "")
 
+    def navigate_home(self):
+        self.go_to_page("https://qa-account-commizzion-vm.inlazetest.com/login") #YUna cuenta ya ingresada, si no poner los del login
 
+    #Inicio de sesión 
+    def wait_for_element(self, locator):
+        return WebDriverWait(self.driver, 10).until(EC.visibility_of_element_located(locator))  
+    
+    def select_button_email(self):
+        self.wait_for_element(self.SELECT_EMAIL).click()
 
+    def select_text_email(self):
+        self.wait_for_element(self.EMAIL).click()
+
+    def text_email(self, email):
+        element = self.wait_for_element(self.EMAIL)  # Corregido
+        element.clear() 
+        element.send_keys(email)
+
+    def select_text_password(self):
+        self.wait_for_element(self.PASSWORD).click()
+
+    def text_password(self, password):
+        element = self.wait_for_element(self.PASSWORD)
+        element.send_keys(password)
+
+    def select_checkbox(self):
+        checkbox_element = self.wait_for_element(self.BUTTON_C)
+        WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(self.BUTTON_C))  # Esperar que sea clickeable
+        checkbox_element.click() 
+
+    def select_button_login(self):
+        self.wait_for_element(self.BUTTON_LOGIN).click()
 

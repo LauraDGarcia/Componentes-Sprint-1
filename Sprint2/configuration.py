@@ -56,11 +56,11 @@ class campaignspage(BasePage):
     CONFI_PROFILE_CONTACT_LOCATION = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[3]/span/button")
     CONFI_PROFILE_COUNTRY = (By.XPATH, "/html/body/div[3]/div[3]/form/div[2]/fieldset[1]/label/div/i[2]")
     CONFI_PROFILE_NEW_COUNTRY = (By.XPATH, "//span[contains(.,'Colombia')]")
-    CONFI_PROFILE_COUNTRY_CODE = (By.XPATH, "/html/body/div[4]/div[3]/form/div[2]/span/fieldset[1]/label/div/i[2]")
+    CONFI_PROFILE_COUNTRY_CODE = (By.XPATH, "/html/body/div[3]/div[3]/form/div[2]/span/fieldset[1]/label/div/i[2]")
     CONFI_PROFILE_NEW_COUNTRY_CODE = (By.XPATH, "(//span[contains(.,'+57')])[2]")
-    CONFI_PROFILE_X_PHONE = (By.XPATH, "/html/body/div[4]/div[3]/form/div[2]/span/fieldset[2]/label/div/i")
+    CONFI_PROFILE_X_PHONE = (By.XPATH, "/html/body/div[3]/div[3]/form/div[2]/span/fieldset[2]/label/div/i")
     CONFI_PROFILE_PHONE = (By.XPATH, "//input[@name='phone']")
-    CONFI_PROFILE_LANGUAGE = (By.XPATH, "/html/body/div[4]/div[3]/form/div[2]/fieldset[2]/label/div/i")
+    CONFI_PROFILE_LANGUAGE = (By.XPATH, "/html/body/div[3]/div[3]/form/div[2]/fieldset[2]/label/div/i")
     CONFI_PROFILE_NEW_LANGUAGE = (By.XPATH, "(//li[contains(@class,'1 undefined')])[1]")
     CONFI_PROFILE_SAVE_CONTACT_LOCATION  = (By.XPATH, "//button[contains(@class,'42')]")
     CONFI_PROFILE_CANCEL_CONTACT_LOCATION  = (By.XPATH, "//button[contains(@class,'76')]")
@@ -333,3 +333,37 @@ class campaignspage(BasePage):
 
     def select_CONFI_PROFILE_COUNTRY_CODE(self):
         self.wait_for_element(self.CONFI_PROFILE_COUNTRY_CODE).click()
+
+    def select_CONFI_PROFILE_NEW_COUNTRY_CODE(self):
+        self.wait_for_element(self.CONFI_PROFILE_NEW_COUNTRY_CODE).click()
+
+    def select_CONFI_PROFILE_X_PHONE(self):
+        self.wait_for_element(self.CONFI_PROFILE_X_PHONE).click()
+
+    def select_CONFI_PROFILE_PHONE(self):
+        self.wait_for_element(self.CONFI_PROFILE_PHONE).click()
+
+    def select_CONFI_PROFILE_PHONE_text(self, phone):
+        element = self.wait_for_element(self.CONFI_PROFILE_PHONE)
+        element.clear() 
+        element.send_keys(phone) 
+
+    def select_CONFI_PROFILE_LANGUAGE(self):
+        self.wait_for_element(self.CONFI_PROFILE_LANGUAGE).click()
+
+    def select_CONFI_PROFILE_NEW_LANGUAGE(self):
+        self.wait_for_element(self.CONFI_PROFILE_NEW_LANGUAGE).click()
+
+    def select_CONFI_PROFILE_SAVE_CONTACT_LOCATION(self):
+        self.wait_for_element(self.CONFI_PROFILE_SAVE_CONTACT_LOCATION).click()
+
+    def select_CONFI_PROFILE_CANCEL_CONTACT_LOCATION(self):
+        self.wait_for_element(self.CONFI_PROFILE_CANCEL_CONTACT_LOCATION).click()
+
+    def select_CONFI_PROFILE_DIALOG_CONTACT_LOCATION_YES(self):
+        self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_YES).click()
+
+    def select_CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT(self):
+        self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT).click()
+
+    #Seleccion de canales

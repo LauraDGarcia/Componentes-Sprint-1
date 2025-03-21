@@ -2,6 +2,7 @@
 email = "ditrouhugrecro-3032@yopmail.com"
 password = "Nomelase@123!"
 recover = "Nomelase@123!"
+new_password = "Nuevacontraseña@123!"
 
 #panel 
 email_panel = "test33@inlaze.com"
@@ -10,9 +11,9 @@ password_panel = "Nomelase@123!"
 #Signin
 name = "pepe"
 lastname = "perez"
-new_email = "v0aw1jxaxu@qzueos.com"
+new_email = "hgnjzyxphq@smykwb.com"
 phone = "612345678"
-new_password = "Nuevacontraseña@123!"
+new_password = "Nomelase@123!"
 code1 = "1"
 code2 = "2"
 code3 = "3"

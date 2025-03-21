@@ -367,3 +367,5 @@ class campaignspage(BasePage):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT).click()
 
     #Seleccion de canales
+
+    

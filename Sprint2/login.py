@@ -16,13 +16,18 @@ class loginpage(BasePage):
     CLOSE_BOTTON = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div/div/button[3]")
     MODAL_CLOSE_SESION = (By.XPATH, "(//button[contains(@class,'39')])[2]")
     FORGOT_PASSWORD = (By.XPATH, "//a[contains(@class,'yGGaR')]")
-    RECOVERY_EMAIL = (By.XPATH, "//input[@placeholder='abc@mail.com']")
+    RECOVERY_EMAIL = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset/label/div/div")
     SEND_CODE_button = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")
     DIALOG = (By.XPATH, "//*[@id='_button--standard_9pqly_1']")
-    CODE = (By.XPATH, "//input[contains(@id,'otp-input-0')]")
-    RESEND_CODE = (By.XPATH, "//span[contains(@class,'VowFu')]")
-    CODE_NOT_YET_RECEIVED = (By.XPATH, "(//button[@type='button'])[2]")
-    NEXT_BUTTON = (By.XPATH, "//button[contains(@class,'42')]")
+    CODEONE = (By.XPATH, "//input[contains(@id,'otp-input-0')]")
+    CODETWO = (By.XPATH, "//input[contains(@id,'otp-input-1')]")
+    CODETHREE = (By.XPATH, "//input[contains(@id,'otp-input-2')]")
+    CODEFOUR = (By.XPATH, "//input[contains(@id,'otp-input-3')]")
+    CODEFIVE = (By.XPATH, "//input[contains(@id,'otp-input-4')]")
+    CODESIX = (By.XPATH, "//input[contains(@id,'otp-input-5')]")
+    RESEND_CODE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[1]")
+    CODE_NOT_YET_RECEIVED = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[2]")
+    NEXT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/div/button")
     PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[1]/label/div/div/input")
     CONFIRM_PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[2]/label/div/div/input")
     CHANGE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")
@@ -86,7 +91,7 @@ class loginpage(BasePage):
     def select_mail(self):
         self.wait_for_element(self.RECOVERY_EMAIL).click()
 
-    def text_mail(self, email):
+    def text_mail_recobery(self, email):
         element = self.wait_for_element(self.RECOVERY_EMAIL) 
         element.clear() 
         element.send_keys(email)
@@ -97,11 +102,38 @@ class loginpage(BasePage):
     def select_dialog(self):
         self.wait_for_element(self.DIALOG).click()
 
-    def Verify_email(self,code):
-        self.wait_for_element(self.CODE).click()
-        element = self.wait_for_element(self.CODE) 
+    def text_code(self):
+        self.wait_for_element(self.CODEONE).click()
+
+    def get_code1(self, code1):
+        element = self.wait_for_element(self.CODEONE)
         element.clear() 
-        element.send_keys(code)
+        element.send_keys(code1)
+
+    def get_code2(self, code2):
+        element = self.wait_for_element(self.CODETWO)
+        element.clear() 
+        element.send_keys(code2)
+
+    def get_code3(self, code3):
+        element = self.wait_for_element(self.CODETHREE)
+        element.clear() 
+        element.send_keys(code3)
+
+    def get_code4(self, code4):
+        element = self.wait_for_element(self.CODEFOUR)
+        element.clear() 
+        element.send_keys(code4)
+
+    def get_code5(self, code5):
+        element = self.wait_for_element(self.CODEFIVE)
+        element.clear() 
+        element.send_keys(code5)
+        
+    def get_code6(self, code6):
+        element = self.wait_for_element(self.CODESIX)
+        element.clear() 
+        element.send_keys(code6)
         
     def next_button(self):    
         self.wait_for_element(self.NEXT_BUTTON).click()

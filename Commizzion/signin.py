@@ -138,8 +138,7 @@ class signinpage(BasePage):
 
     def select_checkbox(self):
         checkbox_element = self.wait_for_element(self.CHECKBOX_C)
-        self.driver.execute_script("window.scrollTo(0,1550)", checkbox_element)
-        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
+        WebDriverWait(self.driver, 15).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
         checkbox_element.click() 
 
     def select_tyc(self):

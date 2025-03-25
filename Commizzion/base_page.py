@@ -51,19 +51,16 @@ class BasePage:
         element.click()
         self.driver.execute_script("arguments[0].scrollIntoView();", element)
 
-    def click_scroll(self, locator):
-       
+    def click_scroll2(self, locator):
         self.wait_for_element(locator).click()
         self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
        
     def click_close_popup(self, locator):
-       
         self.wait_for_element(locator).click()
         self.driver.execute_script("window.scrollTo(0,document.body.scrollHeight)")
         pyautogui.press('alt+f4')
 
     def click_scroll2(self, locator):
-       
         self.wait_for_element(locator).click()
         self.driver.execute_script("window.scrollTo(0,1550)")
 
@@ -75,10 +72,4 @@ class BasePage:
         actions = ActionChains(self.driver)
         actions.move_to_element(element).perform()  # Moverse al elemento
         element.click()
-
-
-    #
-
-         
-
 

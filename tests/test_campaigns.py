@@ -1,4 +1,4 @@
-from Sprint2.campaigns import campaignspage
+from Commizzion.campaigns import campaignspage
 from data.data import email_Campaña
 from data.data import password_campaña
 from selenium.webdriver.support.ui import WebDriverWait

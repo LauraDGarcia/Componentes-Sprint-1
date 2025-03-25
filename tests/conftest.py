@@ -6,8 +6,8 @@ from webdriver_manager.microsoft import EdgeChromiumDriverManager
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.edge.service import Service as EdgeService
-from Sprint2.login import loginpage
-from Sprint2.signin import signinpage
+from Commizzion.login import loginpage
+from Commizzion.signin import signinpage
 from selenium.webdriver.chrome.options import Options
 
 

@@ -1,4 +1,4 @@
-from Sprint2.panel import panelpage
+from Commizzion.panel import panelpage
 from data.data import email_panel
 from data.data import password_panel
 from selenium.webdriver.support.ui import WebDriverWait

@@ -27,7 +27,7 @@ class loginpage(BasePage):
     CODESIX = (By.XPATH, "//input[contains(@id,'otp-input-5')]")
     RESEND_CODE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[1]")
     CODE_NOT_YET_RECEIVED = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[2]")
-    NEXT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/div/button")
+    NEXT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/button[1]")
     PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[1]/label/div/div/input")
     CONFIRM_PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[2]/label/div/div/input")
     CHANGE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")

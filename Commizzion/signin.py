@@ -19,7 +19,7 @@ class signinpage(BasePage):
     PASSWORD = (By.XPATH, "//input[contains(@name,'password')]")
     CONFIRM_PASSWORD = (By.XPATH, "//input[contains(@name,'confirmPassword')]") 
     CLICKAFUERA = (By.XPATH, "//section[contains(@class,'3947j')]")  #######
-    CHECKBOX_C= (By.XPATH, "(//div[contains(@class,'recaptcha-checkbox-border')])[1]") #######
+    CHECKBOX_C= (By.XPATH, "//*[@id='recaptcha-anchor']/div[1]") #######
     TYC_CHECKBOX = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/fieldset[6]/label")
     NEXT_BUTTON_TWO = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/button")
     #verificación de correo
@@ -118,18 +118,11 @@ class signinpage(BasePage):
         element.clear() 
         element.send_keys(phone)  
 
-    #def set_phone_code(self, phone):
-        #self.code_phone1()
-        #self.code_phone2()
-        #self.code_phone3()
-        #self.code_phone4(phone)
-
     def select_password(self, new_password):
         self.wait_for_element(self.PASSWORD).click()
         element = self.wait_for_element(self.PASSWORD)
         element.clear() 
         element.send_keys(new_password)
-
 
     def confirm_password(self, new_password):
         WebDriverWait(self.driver, 10).until(
@@ -144,10 +137,10 @@ class signinpage(BasePage):
         self.wait_for_element(self.CLICKAFUERA).click() 
 
     def select_checkbox(self):
-        self.wait_for_element(self.CHECKBOX_C).click()
-        #checkbox_element = self.wait_for_element(self.CHECKBOX_C)
-        #WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
-        #checkbox_element.click() 
+        checkbox_element = self.wait_for_element(self.CHECKBOX_C)
+        self.driver.execute_script("window.scrollTo(0,1550)", checkbox_element)
+        WebDriverWait(self.driver, 10).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
+        checkbox_element.click() 
 
     def select_tyc(self):
         tyc = self.wait_for_element(self.TYC_CHECKBOX)
@@ -156,7 +149,6 @@ class signinpage(BasePage):
 
     def select_button(self):
         self.wait_for_element(self.NEXT_BUTTON_TWO).click()
-        
 
     #Verificación de correo
     def text_code(self):
@@ -213,7 +205,6 @@ class signinpage(BasePage):
 
     def select_button_add_channel(self):
         #self.wait_for_element(self.ADD_CHANNEL_BUTTON).click()
-
         button_channel = self.wait_for_element(self.ADD_CHANNEL_BUTTON)
         self.driver.execute_script("arguments[0].scrollIntoView()", button_channel)
         button_channel.click()

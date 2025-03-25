@@ -1,7 +1,7 @@
 #Login
 email = "ditrouhugrecro-3032@yopmail.com"
-password = "Nomelase@123!"
-recover = "Nomelase@123!"
+password = "Nomelase@123"
+recover = "Nomelase@123"
 new_password = "Nuevacontraseña@123!"
 
 #panel 

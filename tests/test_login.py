@@ -1,4 +1,4 @@
-from Sprint2.login import loginpage
+from Commizzion.login import loginpage
 from data.data import email
 from data.data import password
 from data.data import code1
@@ -27,7 +27,7 @@ def test_login(driver):
     login.select_button_login()
     login.select_button_close()
     login.select_button_modal() 
-    
+
     #Aca inicia la recuperación de contraseña
 def test_recovery(driver):
     login = loginpage(driver)
@@ -47,6 +47,7 @@ def test_recovery(driver):
     login.get_code4(code4)
     login.get_code5(code5)
     login.get_code6(code6) #Codigo que llega al email
+    time.sleep(60)
     login.next_button()
     login.new_password()
     login.text_new_password("NuevaContraseña@123")

@@ -16,7 +16,7 @@ class loginpage(BasePage):
     CLOSE_BOTTON = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div/div/button[3]")
     MODAL_CLOSE_SESION = (By.XPATH, "(//button[contains(@class,'39')])[2]")
     FORGOT_PASSWORD = (By.XPATH, "//a[contains(@class,'yGGaR')]")
-    RECOVERY_EMAIL = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset/label/div/div")
+    RECOVERY_EMAIL = (By.XPATH, "//input[@placeholder='abc@mail.com']")
     SEND_CODE_button = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")
     DIALOG = (By.XPATH, "//*[@id='_button--standard_9pqly_1']")
     CODEONE = (By.XPATH, "//input[contains(@id,'otp-input-0')]")
@@ -91,9 +91,9 @@ class loginpage(BasePage):
     def select_mail(self):
         self.wait_for_element(self.RECOVERY_EMAIL).click()
 
-    def text_mail_recobery(self, email):
-        element = self.wait_for_element(self.RECOVERY_EMAIL) 
-        element.clear() 
+    def text_mail_recovery(self, email):
+        element = self.wait_for_element(self.RECOVERY_EMAIL)
+        element.clear()
         element.send_keys(email)
 
     def select_button_code(self):

@@ -24,7 +24,10 @@ def test_form_signin(driver):
     signin.select_text_name(name)
     signin.select_text_lastname(lastname)
     signin.select_text_email(new_email)
-    signin.set_phone_code(phone)
+    signin.code_phone1()
+    signin.code_phone2()
+    signin.code_phone3()
+    signin.code_phone4()
     signin.select_password(new_password)
     signin.confirm_password(new_password) 
     signin.select_afuera() ############

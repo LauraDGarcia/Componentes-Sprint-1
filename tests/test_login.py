@@ -27,12 +27,16 @@ def test_login(driver):
     login.select_button_login()
     login.select_button_close()
     login.select_button_modal() 
+    
     #Aca inicia la recuperación de contraseña
+def test_recovery(driver):
+    login = loginpage(driver)
+    login.navigate_home()
     login.select_email_button()
     login.select_recovery()
-    login.text_mail_recobery()
+    login.select_mail()
     time.sleep(5)
-    login.text_mail(email)
+    login.text_mail_recovery(email)
     time.sleep(5)
     login.select_button_code()
     login.select_dialog()

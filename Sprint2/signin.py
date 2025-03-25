@@ -13,13 +13,13 @@ class signinpage(BasePage):
     NAME = (By.XPATH, "//input[contains(@name,'name')]")
     LASTNAME = (By.XPATH, "//input[contains(@name,'lastName')]")
     EMAIL = (By.XPATH, "//input[contains(@name,'email')]")
-    PHONE_INDICATOR = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/div[1]/fieldset[1]/label/div/i")
-    NUMBER_INDICATOR = (By.XPATH, "(//span[contains(@class,'1')])[254]")
+    PHONE_INDICATOR = (By.XPATH, "/html/body/div[1]/div/div/div/div[3]/section/form/div[1]/fieldset[1]/label/div")
+    NUMBER_INDICATOR = (By.XPATH, "//li[contains(.,'+57')]")
     PHONE = (By.XPATH, "//input[contains(@name,'phoneNumber')]")
     PASSWORD = (By.XPATH, "//input[contains(@name,'password')]")
     CONFIRM_PASSWORD = (By.XPATH, "//input[contains(@name,'confirmPassword')]") 
     CLICKAFUERA = (By.XPATH, "//section[contains(@class,'3947j')]")  #######
-    CHECKBOX_C= (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/div[2]") #######
+    CHECKBOX_C= (By.XPATH, "(//div[contains(@class,'recaptcha-checkbox-border')])[1]") #######
     TYC_CHECKBOX = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/fieldset[6]/label")
     NEXT_BUTTON_TWO = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/button")
     #verificación de correo
@@ -118,11 +118,11 @@ class signinpage(BasePage):
         element.clear() 
         element.send_keys(phone)  
 
-    def set_phone_code(self, phone):
-        self.code_phone1()
-        self.code_phone2()
-        self.code_phone3()
-        self.code_phone4(phone)
+    #def set_phone_code(self, phone):
+        #self.code_phone1()
+        #self.code_phone2()
+        #self.code_phone3()
+        #self.code_phone4(phone)
 
     def select_password(self, new_password):
         self.wait_for_element(self.PASSWORD).click()
@@ -144,10 +144,10 @@ class signinpage(BasePage):
         self.wait_for_element(self.CLICKAFUERA).click() 
 
     def select_checkbox(self):
-        checkbox_element = self.wait_for_element(self.CHECKBOX_C)  # Centrar en pantalla
-        WebDriverWait(self.driver, 50).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
-        self.driver.execute_script("arguments[0].scrollIntoView();", checkbox_element)
-        checkbox_element.click() 
+        self.wait_for_element(self.CHECKBOX_C).click()
+        #checkbox_element = self.wait_for_element(self.CHECKBOX_C)
+        #WebDriverWait(self.driver, 30).until(EC.element_to_be_clickable(self.CHECKBOX_C))  # Esperar que sea clickeable
+        #checkbox_element.click() 
 
     def select_tyc(self):
         tyc = self.wait_for_element(self.TYC_CHECKBOX)

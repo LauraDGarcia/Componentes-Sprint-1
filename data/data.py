@@ -28,7 +28,9 @@ textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, t
 email_Campaña = "ditrouhugrecro-3032@yopmail.com"
 password_campaña = "Nomelase@123!"
 
-
+#Configuracion
+URL = "https://www.facebook.com/groups/568416450009773/"
+name_channel = "canal1"
 
     
 

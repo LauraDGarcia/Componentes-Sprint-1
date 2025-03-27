@@ -67,14 +67,14 @@ class campaignspage(BasePage):
     CONFI_PROFILE_DIALOG_CONTACT_LOCATION_YES = (By.XPATH, "//button[contains(@class,'163')]")
     CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT = (By.XPATH, "//button[contains(@class,'224')]")
     #Seleccion de canales
-    CONFIGURATION_CHANNELS = (By.XPATH, "(//span[contains(@class,'1')])[17]")
+    CONFIGURATION_CHANNELS = (By.XPATH, "(//span[contains(@class,'1')])[18]")
     CONFI_CHANNELS_3_POINTS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[1]/div[5]/div/button")
     CONFI_CHANNELS_EDIT_CHANNEL1_BUTTON = (By.XPATH, "(//span[contains(@class,'137')])[15]")
     CONFI_CHANNELS_EDIT_URL_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[2]/div/div/section/form/div[1]/div[1]/fieldset/label/div/i")
     CONFI_CHANNELS_EDIT_URL = (By.XPATH, "//input[@name='url']")
     CONFI_CHANNELS_EDIT_NAME_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[2]/div/div/section/form/div[1]/div[2]/fieldset/label/div/i")
     CONFI_CHANNELS_EDIT_NAME = (By.XPATH, "//input[@name='name']")
-    CONFI_CHANNELS_EDIT_SAVE = (By.XPATH, "//span[contains(.,'Save')]")
+    CONFI_CHANNELS_EDIT_SAVE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[2]/div/div/section/form/div[2]/button[2]")
     CONFI_CHANNELS_EDIT_CANCEL = (By.XPATH, "//span[contains(.,'Cancel')]")
     CONFI_CHANNELS_EDIT_CHANNEL1_YES = (By.XPATH, "//button[contains(@class,'163')]")
     CONFI_CHANNELS_EDIT_CHANNEL1_NOT = (By.XPATH, "//button[contains(@class,'224')]")
@@ -367,5 +367,33 @@ class campaignspage(BasePage):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT).click()
 
     #Seleccion de canales
+    def select_CONFIGURATION_CHANNELS(self):
+        self.wait_for_element(self.CONFIGURATION_CHANNELS).click()
 
+    def select_CONFI_CHANNELS_3_POINTS(self):
+        self.wait_for_element(self.CONFI_CHANNELS_3_POINTS).click()
+
+    def select_CONFI_CHANNELS_EDIT_CHANNEL1_BUTTON(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_BUTTON).click()
+
+    def select_CONFI_CHANNELS_EDIT_URL_X(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_URL_X).click()
+
+    def select_CONFI_CHANNELS_EDIT_URL(self, URL):
+        element = self.wait_for_element(self.CONFI_CHANNELS_EDIT_URL)
+        element.clear() 
+        element.send_keys(URL) 
+
+    def select_CONFI_CHANNELS_EDIT_NAME_X(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_NAME_X).click()
+
+    def select_CONFI_CHANNELS_EDIT_NAME(self, name):
+        element = self.wait_for_element(self.CONFI_CHANNELS_EDIT_NAME)
+        element.clear() 
+        element.send_keys(name) 
+
+    def select_CONFI_CHANNELS_EDIT_SAVE(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_SAVE).click()
+
+    def select_
     

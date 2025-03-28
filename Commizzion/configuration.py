@@ -75,10 +75,10 @@ class campaignspage(BasePage):
     CONFI_CHANNELS_EDIT_NAME_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[2]/div/div/section/form/div[1]/div[2]/fieldset/label/div/i")
     CONFI_CHANNELS_EDIT_NAME = (By.XPATH, "//input[@name='name']")
     CONFI_CHANNELS_EDIT_SAVE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[1]/div[2]/div/div/section/form/div[2]/button[2]")
-    CONFI_CHANNELS_EDIT_CANCEL = (By.XPATH, "//span[contains(.,'Cancel')]")
+    CONFI_CHANNELS_EDIT_CANCEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[2]/div[2]/div/div/section/form/div[2]/button[1]")
     CONFI_CHANNELS_EDIT_CHANNEL1_YES = (By.XPATH, "//button[contains(@class,'163')]")
     CONFI_CHANNELS_EDIT_CHANNEL1_NOT = (By.XPATH, "//button[contains(@class,'224')]")
-    CONFI_CHANNELS_ADD_NEW_CHANNEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[2]/div/div[4]/div/button")
+    CONFI_CHANNELS_ADD_NEW_CHANNEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[3]/div/div[4]/div/button")
     CONFI_CHANNELS_NEW_URL = (By.XPATH, "(//input[@name='url'])[2]")
     CONFI_CHANNELS_NEW_NAME = (By.XPATH, "(//input[@name='name'])[2]")
     CONFI_CHANNELS_SAVE_NEW_CHANNEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[2]/section/form/div[2]/button[2]")
@@ -394,6 +394,18 @@ class campaignspage(BasePage):
 
     def select_CONFI_CHANNELS_EDIT_SAVE(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_SAVE).click()
+
+    def select_CONFI_CHANNELS_EDIT_CANCEL(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_CANCEL).click()
+
+    def select_CONFI_CHANNELS_EDIT_CHANNEL1_YES(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_YES).click()
+
+    def select_CONFI_CHANNELS_EDIT_CHANNEL1_NOT(self):
+        self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_NOT).click()
+
+    def select_CONFI_CHANNELS_ADD_NEW_CHANNEL(self):
+        self.wait_for_element(self.CONFI_CHANNELS_ADD_NEW_CHANNEL).click()
 
     def select_
     

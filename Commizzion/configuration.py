@@ -84,13 +84,15 @@ class campaignspage(BasePage):
     CONFI_CHANNELS_SAVE_NEW_CHANNEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[2]/section/form/div[2]/button[2]")
     CONFI_CHANNELS_CANCEL_NEW_CHANNEL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/main/div/section/div[2]/section/form/div[2]/button[2]")
     CONFI_CHANNELS_DELETE_CHANNEL = (By.XPATH, "(//span[contains(@class,'137')])[16]")
+    CONFI_CHANNELS_DELETE_CHANNEL_YES = (By.XPATH, "//button[contains(@class,'158')]")
+    CONFI_CHANNELS_DELETE_CHANNEL_NOT = (By.XPATH, "//button[contains(@class,'220')]")
     #Sleccion de preferencias
     CONFIGURATION_PREFERENCES = (By.XPATH, "(//span[contains(@class,'73')])[3]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[1]/div/button")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[2]/div[1]/div/label[1]/span/i")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER = (By.XPATH, "//input[contains(@placeholder,'Search country')]")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[2]/div[2]/fieldset/label/div/div")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES = (By.XPATH, "//button[contains(@class,'76')]")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS = (By.XPATH, "//button[contains(@class,'76')]")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS = (By.XPATH, "(//span[contains(@class,'153')])[29]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE = (By.XPATH, "//button[contains(@class,'42')]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL = (By.XPATH, "(//button[contains(@class,'58')])[4]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES = (By.XPATH, "//button[contains(@class,'163')]")
@@ -407,5 +409,76 @@ class campaignspage(BasePage):
     def select_CONFI_CHANNELS_ADD_NEW_CHANNEL(self):
         self.wait_for_element(self.CONFI_CHANNELS_ADD_NEW_CHANNEL).click()
 
-    def select_
+    def select_CONFI_CHANNELS_NEW_URL_click(self):
+        self.wait_for_element(self.CONFI_CHANNELS_NEW_URL).click()
+
+    def select_CONFI_CHANNELS_NEW_URL(self, URL):
+        element = self.wait_for_element(self.CONFI_CHANNELS_NEW_URL)
+        element.clear() 
+        element.send_keys(URL) 
+
+    def select_CONFI_CHANNELS_NEW_NAME_click(self):
+        self.wait_for_element(self.CONFI_CHANNELS_NEW_NAME).click()
+
+    def select_CONFI_CHANNELS_NEW_NAME(self, name):
+        element = self.wait_for_element(self.CONFI_CHANNELS_NEW_NAME)
+        element.clear() 
+        element.send_keys(name) 
+
+    def select_CONFI_CHANNELS_SAVE_NEW_CHANNEL(self):
+        self.wait_for_element(self.CONFI_CHANNELS_SAVE_NEW_CHANNEL).click()
+
+    def select_CONFI_CHANNELS_CANCEL_NEW_CHANNEL(self):
+        self.wait_for_element(self.CONFI_CHANNELS_CANCEL_NEW_CHANNEL).click()
+
+    def select_CONFI_CHANNELS_DELETE_CHANNEL(self):
+        self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL).click()
+
+    def select_CONFI_CHANNELS_DELETE_CHANNEL_YES(self):
+        self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL_YES).click()
+
+    def select_CONFI_CHANNELS_DELETE_CHANNEL_NOT(self):
+        self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL_NOT).click()
+
+    #Seleccion de preferencias paises
+    def select_CONFIGURATION_PREFERENCES(self):
+        self.wait_for_element(self.CONFIGURATION_PREFERENCES).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER_click(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER(self, country):
+        element = self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER)
+        element.clear() 
+        element.send_keys(country) 
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT).click()
+
+    #Seleccion de preferencias objetivos
+    def select_CONFI_PREFERENCES_OBJETIVE(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_OBJETIVE).click()
+
+    
     

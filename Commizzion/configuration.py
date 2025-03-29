@@ -3,7 +3,7 @@ from .base_page import BasePage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class campaignspage(BasePage):
+class configurationpage(BasePage):
     #Ingreso normal
     SELECT_EMAIL = (By.XPATH, "//button[contains(.,'Correo electrónico')]")
     EMAIL = (By.XPATH, "//input[contains(@name,'email')]")
@@ -480,5 +480,38 @@ class campaignspage(BasePage):
     def select_CONFI_PREFERENCES_OBJETIVE(self):
         self.wait_for_element(self.CONFI_PREFERENCES_OBJETIVE).click()
 
+    def select_CONFI_PREFERENCES_OBJ_SELECT(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_OBJ_SELECT).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES).click()
+
+    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT(self):
+        self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT).click()
+
+    #Configuración ayuda
+    def select_CONFIGURATION_HELP(self):
+        self.wait_for_element(self.CONFIGURATION_HELP).click()
+
+    def select_CONFI_HELP_CALL(self):
+        self.wait_for_element(self.CONFI_HELP_CALL).click()
+
+    def select_CONFI_HELP_CHAT(self):
+        self.wait_for_element(self.CONFI_HELP_CHAT).click()
+
+    def select_CONFI_HELP_POLICIES_TYC(self):
+        self.wait_for_element(self.CONFI_HELP_POLICIES_TYC).click()
+
+    def select_CONFI_HELP_POLICIES_PRIVACY_POLICY(self):
+        self.wait_for_element(self.CONFI_HELP_POLICIES_PRIVACY_POLICY).click()
+
+    def select_CONFI_HELP_POLICIES_ISO(self):
+        self.wait_for_element(self.CONFI_HELP_POLICIES_ISO).click()
     
     

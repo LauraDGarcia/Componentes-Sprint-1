@@ -7,7 +7,7 @@ import time
 
 #Haria falta el ingresar a la cuenta
 
-def test_panel_actions(driver):
+def test_campaigns(driver):
     campaigns = campaignspage(driver)
     campaigns.navigate_home()
     #Ingreso
@@ -17,7 +17,7 @@ def test_panel_actions(driver):
     campaigns.select_text_password()
     campaigns.text_password(password_campaña)
     time.sleep(5)
-    campaigns.select_checkbox()  # Resolver CAPTCHA manualmente  buscar como no hacerlo manual
+    campaigns.select_checkbox()  
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable(campaigns.BUTTON_LOGIN))
     campaigns.select_button_login()
     #seleccionar campañas

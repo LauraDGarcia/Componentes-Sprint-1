@@ -26,11 +26,17 @@ textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, t
 
 #Campañas
 email_Campaña = "ditrouhugrecro-3032@yopmail.com"
-password_campaña = "Nomelase@123!"
+password_campaña = "Nomelase@123"
 
 #Configuracion
-URL = "https://www.facebook.com/groups/568416450009773/"
+URL_channel = "https://www.facebook.com/groups/568416450009773/"
 name_channel = "canal1"
-
+email_confi = "treitrocramoille-5406@yopmail.com"
+password_confi = "Nuevacontraseña@123!"
+url_new_channel = "https://x.com/KatsCarey"
+name_new_channel = "Gatos carey"
+country_preference = "Argentina"
+email_configuracion = "test22@inlaze.com"
+password_configuracion = "Nomelase@123!"
     
 

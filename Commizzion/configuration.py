@@ -15,7 +15,8 @@ class configurationpage(BasePage):
     #Seleccion del perfil
     CONFIGURATION_PROFILE = (By.XPATH, "(//span[contains(@class,'1')])[17]")
     CONFI_PROFILE_LOGIN_DATA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/span/button")
-    CONFI_PROFILE_EMAIL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div/span[2]/span[2]/button")
+    CONFI_PROFILE_EMAIL_AND_PASSWORD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/span/button/i")
+    CONFI_PROFILE_EMAIL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div/span[2]/span[2]/button/i")
     CONFI_PROFILE_EMAIL_BUTTONCHECK = (By.XPATH, "//input[contains(@type,'checkbox')]")
     CONFI_PROFILE_EMAIL_BUTTONCONTINUE = (By.XPATH, "//button[@class='_label-large_16ofa_137 _button_e9d1m_1 _button--filled_e9d1m_42']")
     CONFI_PROFILE_EMAIL_BUTTONCANCEL = (By.XPATH, "//button[contains(@class,'76')]")
@@ -47,7 +48,7 @@ class configurationpage(BasePage):
     CONFI_PROFILE_DIALOG_EMAIL_NOT = (By.XPATH, "//button[contains(@class,'224')]")
     CONFI_PROFILE_EDIT_PASSWORD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div/span[2]/span[4]/button")
     CONFI_PROFILE_CURRENT_PASSWORD = (By.XPATH, "//input[@name='password']")
-    CONFI_PROFILE_NEW_PASSWORD = (By.XPATH, "(//div[contains(@class,'7')])[5]")
+    CONFI_PROFILE_NEW_PASSWORD = (By.XPATH, "(//input[@type='password'])[2]")
     CONFI_PROFILE_CONFIRM_PASSWORD = (By.XPATH, "(//div[contains(@class,'7')])[6]")
     CONFI_PROFILE_SAVE_PASSWORD = (By.XPATH, "//button[contains(@class,'42')]")
     CONFI_PROFILE_CANCEL_PASSWORD = (By.XPATH, "//button[contains(@class,'76')]")
@@ -90,7 +91,7 @@ class configurationpage(BasePage):
     CONFIGURATION_PREFERENCES = (By.XPATH, "(//span[contains(@class,'73')])[3]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[1]/div/button")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[2]/div[1]/div/label[1]/span/i")
-    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/section/section/section/div/section/div[2]/div[2]/div[2]/fieldset/label/div/div")
+    CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER = (By.XPATH, "//input[contains(@placeholder,'Buscar país')]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES = (By.XPATH, "//button[contains(@class,'76')]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS = (By.XPATH, "(//span[contains(@class,'153')])[29]")
     CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE = (By.XPATH, "//button[contains(@class,'42')]")
@@ -153,6 +154,9 @@ class configurationpage(BasePage):
     def select_CONFI_PROFILE_LOGIN_DATA(self):
         self.wait_for_element(self.CONFI_PROFILE_LOGIN_DATA).click()
 
+    def select_CONFI_PROFILE_EMAIL_AND_PASSWORD(self):
+        self.wait_for_element(self. CONFI_PROFILE_EMAIL_AND_PASSWORD).click()
+
     def select_CONFI_PROFILE_EMAIL(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL).click()
 
@@ -213,7 +217,7 @@ class configurationpage(BasePage):
     def select_CONFI_PROFILE_NEW_EMAIL(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_EMAIL).click()
 
-    def select_CONFI_PROFILE_NEW_EMAIL(self, email):
+    def select_CONFI_PROFILE_NEW_EMAIL_text(self, email):
         element = self.wait_for_element(self.CONFI_PROFILE_NEW_EMAIL)
         element.clear() 
         element.send_keys(email)
@@ -221,7 +225,7 @@ class configurationpage(BasePage):
     def select_CONFI_PROFILE_CONFIRM_EMAIL(self):
         self.wait_for_element(self.CONFI_PROFILE_CONFIRM_EMAIL).click()
 
-    def select_CONFI_PROFILE_NEW_EMAIL(self, email):
+    def select_CONFI_PROFILE_CONFIRM_EMAIL_text(self, email):
         element = self.wait_for_element(self.CONFI_PROFILE_CONFIRM_EMAIL)
         element.clear() 
         element.send_keys(email)

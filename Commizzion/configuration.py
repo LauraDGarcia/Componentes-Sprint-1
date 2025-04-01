@@ -151,22 +151,22 @@ class configurationpage(BasePage):
         self.wait_for_element(self.CONFIGURATION).click()
 
     #Perfil correo
-    def select_CONFI_PROFILE_LOGIN_DATA(self):
+    def select_confi_profile_login_data(self):
         self.wait_for_element(self.CONFI_PROFILE_LOGIN_DATA).click()
 
-    def select_CONFI_PROFILE_EMAIL_AND_PASSWORD(self):
+    def select_confi_profile_email_and_password(self):
         self.wait_for_element(self. CONFI_PROFILE_EMAIL_AND_PASSWORD).click()
 
-    def select_CONFI_PROFILE_EMAIL(self):
+    def select_confi_profile_email(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL).click()
 
-    def select_CONFI_PROFILE_EMAIL_BUTTONCHECK(self):
+    def select_confi_profile_email_buttoncheck(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_BUTTONCHECK).click()
 
-    def select_CONFI_PROFILE_EMAIL_BUTTONCONTINUE(self):
+    def select_confi_profile_email_buttoncontinue(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_BUTTONCONTINUE).click()
 
-    def select_CONFI_PROFILE_EMAIL_BUTTONCANCE(self):
+    def select_confi_profile_email_buttoncance(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_BUTTONCANCEL).click()
 
     def text_code(self):
@@ -202,38 +202,38 @@ class configurationpage(BasePage):
         element.clear() 
         element.send_keys(code6)
 
-    def select_CONFI_PROFILE_EMAIL_RESENDCODE(self):
+    def select_confi_profile_email_resendcode(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_RESENDCODE).click()
 
-    def select_CONFI_PROFILE_EMAIL_HAVENT_RECEIVED(self):
+    def select_confi_profile_email_havent_received(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_HAVENT_RECEIVED).click()
 
-    def select_CONFI_PROFILE_EMAIL_BUTTONNEXT(self):
+    def select_confi_profile_email_buttonnext(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_BUTTONNEXT).click()
 
-    def select_CONFI_PROFILE_EMAIL_BUTTON_CANCEL(self):
+    def select_confi_profile_email_button_cancel(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_BUTTON_CANCEL).click()
 
-    def select_CONFI_PROFILE_NEW_EMAIL(self):
+    def select_confi_profile_new_email(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_EMAIL).click()
 
-    def select_CONFI_PROFILE_NEW_EMAIL_text(self, email):
+    def select_confi_profile_new_email_text(self, email):
         element = self.wait_for_element(self.CONFI_PROFILE_NEW_EMAIL)
         element.clear() 
         element.send_keys(email)
 
-    def select_CONFI_PROFILE_CONFIRM_EMAIL(self):
+    def select_confi_profile_confirm_email(self):
         self.wait_for_element(self.CONFI_PROFILE_CONFIRM_EMAIL).click()
 
-    def select_CONFI_PROFILE_CONFIRM_EMAIL_text(self, email):
+    def select_confi_profile_confirm_email_text(self, email):
         element = self.wait_for_element(self.CONFI_PROFILE_CONFIRM_EMAIL)
         element.clear() 
         element.send_keys(email)
 
-    def select_CONFI_PROFILE_SAVE_EMAIL(self):
+    def select_confi_profile_save_email(self):
         self.wait_for_element(self.CONFI_PROFILE_SAVE_EMAIL).click()
 
-    def select_CONFI_PROFILE_CANCEL_EMAIL(self):
+    def select_confi_profile_cancel_email(self):
         self.wait_for_element(self.CONFI_PROFILE_CANCEL_EMAIL).click()
 
     def text_code_new(self):
@@ -269,253 +269,253 @@ class configurationpage(BasePage):
         element.clear() 
         element.send_keys(code6)
 
-    def select_CONFI_PROFILE_EMAIL_NEW_RESENDCODE(self):
+    def select_confi_profile_email_new_resendcode(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_NEW_RESENDCODE).click()
 
-    def select_CONFI_PROFILE_EMAIL_NEW_HAVENT_RECEIVED(self):
+    def select_confi_profile_email_new_havent_received(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_NEW_HAVENT_RECEIVED).click()
 
-    def select_CONFI_PROFILE_EMAIL_NEW_BUTTONNEXT(self):
+    def select_confi_profile_email_new_buttonnext(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_NEW_BUTTONNEXT).click()
 
-    def select_CONFI_PROFILE_EMAIL_NEW_BUTTON_CANCEL(self):
+    def select_confi_profile_email_new_button_cancel(self):
         self.wait_for_element(self.CONFI_PROFILE_EMAIL_NEW_BUTTON_CANCEL).click()
 
-    def select_CONFI_PROFILE_DIALOG_EMAIL_YES(self):
+    def select_confi_profile_dialog_email_yes(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_EMAIL_YES).click()
 
-    def select_CONFI_PROFILE_DIALOG_EMAIL_NOT(self):
+    def select_confi_profile_dialog_email_not(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_EMAIL_NOT).click()
 
     #Perfil contraseña
-    def select_CONFI_PROFILE_EDIT_PASSWORD(self):
+    def select_confi_profile_email_and_password(self):
         self.wait_for_element(self.CONFI_PROFILE_EDIT_PASSWORD).click()
 
-    def select_CONFI_PROFILE_CURRENT_PASSWORD(self):
+    def select_confi_profile_current_password(self):
         self.wait_for_element(self.CONFI_PROFILE_CURRENT_PASSWORD).click()
 
-    def select_CONFI_PROFILE_CURRENT_PASSWORD_text(self, password):
+    def select_confi_profile_current_password_text(self, password):
         element = self.wait_for_element(self.CONFI_PROFILE_CURRENT_PASSWORD)
         element.clear() 
         element.send_keys(password)
 
-    def select_CONFI_PROFILE_NEW_PASSWORD(self):
+    def select_confi_profile_new_password(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_PASSWORD).click()
 
-    def select_CONFI_PROFILE_NEW_PASSWORD_text(self, newpassword):
+    def select_confi_profile_new_password_text(self, newpassword):
         element = self.wait_for_element(self.CONFI_PROFILE_NEW_PASSWORD)
         element.clear() 
         element.send_keys(newpassword)   
 
-    def select_CONFI_PROFILE_CONFIRM_PASSWORD(self):
+    def select_confi_profile_confirm_password(self):
         self.wait_for_element(self.CONFI_PROFILE_CONFIRM_PASSWORD).click() 
 
-    def select_CONFI_PROFILE_CONFIRM_PASSWORD_text(self, newpassword):
+    def select_confi_profile_confirm_password_text(self, newpassword):
         element = self.wait_for_element(self.CONFI_PROFILE_CONFIRM_PASSWORD)
         element.clear() 
         element.send_keys(newpassword) 
 
-    def select_CONFI_PROFILE_SAVE_PASSWORD(self):
+    def select_confi_profile_save_password(self):
         self.wait_for_element(self.CONFI_PROFILE_SAVE_PASSWORD).click()
 
-    def select_CONFI_PROFILE_CANCEL_PASSWORD(self):
+    def select_confi_profile_cancel_password(self):
         self.wait_for_element(self.CONFI_PROFILE_CANCEL_PASSWORD).click()
 
-    def select_CONFI_PROFILE_DIALOG_PASSWORD_YES(self):
+    def select_confi_profile_dialog_password_yes(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_PASSWORD_YES).click()
 
-    def select_CONFI_PROFILE_DIALOG_PASSWORD_NOT(self):
+    def select_confi_profile_dialog_password_not(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_PASSWORD_NOT).click()
 
     #Perfil Contact and Location Information
-    def select_CONFI_PROFILE_CONTACT_LOCATION(self):
+    def select_confi_profile_contact_location(self):
         self.wait_for_element(self.CONFI_PROFILE_CONTACT_LOCATION).click()
 
-    def select_CONFI_PROFILE_COUNTRY(self):
+    def select_confi_profile_country(self):
         self.wait_for_element(self.CONFI_PROFILE_COUNTRY).click()
 
-    def select_CONFI_PROFILE_NEW_COUNTRY(self):
+    def select_confi_profile_new_country(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_COUNTRY).click()
 
-    def select_CONFI_PROFILE_COUNTRY_CODE(self):
+    def select_confi_profile_country_code(self):
         self.wait_for_element(self.CONFI_PROFILE_COUNTRY_CODE).click()
 
-    def select_CONFI_PROFILE_NEW_COUNTRY_CODE(self):
+    def select_confi_profile_new_country_code(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_COUNTRY_CODE).click()
 
-    def select_CONFI_PROFILE_X_PHONE(self):
+    def select_confi_profile_x_phone(self):
         self.wait_for_element(self.CONFI_PROFILE_X_PHONE).click()
 
-    def select_CONFI_PROFILE_PHONE(self):
+    def select_confi_profile_phone(self):
         self.wait_for_element(self.CONFI_PROFILE_PHONE).click()
 
-    def select_CONFI_PROFILE_PHONE_text(self, phone):
+    def select_confi_profile_phone_text(self, phone):
         element = self.wait_for_element(self.CONFI_PROFILE_PHONE)
         element.clear() 
         element.send_keys(phone) 
 
-    def select_CONFI_PROFILE_LANGUAGE(self):
+    def select_confi_profile_language(self):
         self.wait_for_element(self.CONFI_PROFILE_LANGUAGE).click()
 
-    def select_CONFI_PROFILE_NEW_LANGUAGE(self):
+    def select_confi_profile_new_language(self):
         self.wait_for_element(self.CONFI_PROFILE_NEW_LANGUAGE).click()
 
-    def select_CONFI_PROFILE_SAVE_CONTACT_LOCATION(self):
+    def select_confi_profile_save_contact_location(self):
         self.wait_for_element(self.CONFI_PROFILE_SAVE_CONTACT_LOCATION).click()
 
-    def select_CONFI_PROFILE_CANCEL_CONTACT_LOCATION(self):
+    def select_confi_profile_cancel_contact_location(self):
         self.wait_for_element(self.CONFI_PROFILE_CANCEL_CONTACT_LOCATION).click()
 
-    def select_CONFI_PROFILE_DIALOG_CONTACT_LOCATION_YES(self):
+    def select_confi_profile_dialog_contact_location_yes(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_YES).click()
 
-    def select_CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT(self):
+    def select_confi_profile_dialog_contact_location_not(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT).click()
 
     #Seleccion de canales
-    def select_CONFIGURATION_CHANNELS(self):
+    def select_configuration_channelS(self):
         self.wait_for_element(self.CONFIGURATION_CHANNELS).click()
 
-    def select_CONFI_CHANNELS_3_POINTS(self):
+    def select_confi_channels_3_points(self):
         self.wait_for_element(self.CONFI_CHANNELS_3_POINTS).click()
 
-    def select_CONFI_CHANNELS_EDIT_CHANNEL1_BUTTON(self):
+    def select_confi_channels_edit_channel1_button(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_BUTTON).click()
 
-    def select_CONFI_CHANNELS_EDIT_URL_X(self):
+    def select_confi_channels_edit_url_x(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_URL_X).click()
 
-    def select_CONFI_CHANNELS_EDIT_URL(self, URL):
+    def select_confi_channels_edit_url(self, URL):
         element = self.wait_for_element(self.CONFI_CHANNELS_EDIT_URL)
         element.clear() 
         element.send_keys(URL) 
 
-    def select_CONFI_CHANNELS_EDIT_NAME_X(self):
+    def select_confi_channels_edit_name_x(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_NAME_X).click()
 
-    def select_CONFI_CHANNELS_EDIT_NAME(self, name):
+    def select_confi_channels_edit_name(self, name):
         element = self.wait_for_element(self.CONFI_CHANNELS_EDIT_NAME)
         element.clear() 
         element.send_keys(name) 
 
-    def select_CONFI_CHANNELS_EDIT_SAVE(self):
+    def select_confi_channels_edit_save(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_SAVE).click()
 
-    def select_CONFI_CHANNELS_EDIT_CANCEL(self):
+    def select_confi_channels_edit_cancel(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_CANCEL).click()
 
-    def select_CONFI_CHANNELS_EDIT_CHANNEL1_YES(self):
+    def select_confi_channels_edit_channel1_yes(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_YES).click()
 
-    def select_CONFI_CHANNELS_EDIT_CHANNEL1_NOT(self):
+    def select_confi_channels_edit_channel1_not(self):
         self.wait_for_element(self.CONFI_CHANNELS_EDIT_CHANNEL1_NOT).click()
 
-    def select_CONFI_CHANNELS_ADD_NEW_CHANNEL(self):
+    def select_confi_channels_add_new_channel(self):
         self.wait_for_element(self.CONFI_CHANNELS_ADD_NEW_CHANNEL).click()
 
-    def select_CONFI_CHANNELS_NEW_URL_click(self):
+    def select_confi_channels_new_url_click(self):
         self.wait_for_element(self.CONFI_CHANNELS_NEW_URL).click()
 
-    def select_CONFI_CHANNELS_NEW_URL(self, URL):
+    def select_confi_channels_new_url(self, URL):
         element = self.wait_for_element(self.CONFI_CHANNELS_NEW_URL)
         element.clear() 
         element.send_keys(URL) 
 
-    def select_CONFI_CHANNELS_NEW_NAME_click(self):
+    def select_confi_channels_new_name_click(self):
         self.wait_for_element(self.CONFI_CHANNELS_NEW_NAME).click()
 
-    def select_CONFI_CHANNELS_NEW_NAME(self, name):
+    def select_confi_channels_new_name(self, name):
         element = self.wait_for_element(self.CONFI_CHANNELS_NEW_NAME)
         element.clear() 
         element.send_keys(name) 
 
-    def select_CONFI_CHANNELS_SAVE_NEW_CHANNEL(self):
+    def select_confi_channels_save_new_channel(self):
         self.wait_for_element(self.CONFI_CHANNELS_SAVE_NEW_CHANNEL).click()
 
-    def select_CONFI_CHANNELS_CANCEL_NEW_CHANNEL(self):
+    def select_confi_channels_cancel_new_channel(self):
         self.wait_for_element(self.CONFI_CHANNELS_CANCEL_NEW_CHANNEL).click()
 
-    def select_CONFI_CHANNELS_DELETE_CHANNEL(self):
+    def select_confi_channels_delete_channel(self):
         self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL).click()
 
-    def select_CONFI_CHANNELS_DELETE_CHANNEL_YES(self):
+    def select_confi_channels_delete_channel_yes(self):
         self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL_YES).click()
 
-    def select_CONFI_CHANNELS_DELETE_CHANNEL_NOT(self):
+    def select_confi_channels_delete_channel_not(self):
         self.wait_for_element(self.CONFI_CHANNELS_DELETE_CHANNEL_NOT).click()
 
     #Seleccion de preferencias paises
-    def select_CONFIGURATION_PREFERENCES(self):
+    def select_configuration_preferences(self):
         self.wait_for_element(self.CONFIGURATION_PREFERENCES).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES(self):
+    def select_confi_preferences_audience_countries(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X(self):
+    def select_confi_preferences_audience_countries_x(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_X).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER_click(self):
+    def select_confi_preferences_audience_countries_placeholder_click(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER(self, country):
+    def select_confi_preferences_audience_countries_placeholder(self, country):
         element = self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_PLACEHOLDER)
         element.clear() 
         element.send_keys(country) 
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES(self):
+    def select_confi_preferences_audience_countries_more_countries(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_MORE_COUNTRIES).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS(self):
+    def select_confi_preferences_audience_countries_chips(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CHIPS).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE(self):
+    def select_confi_preferences_audience_countries_save(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_SAVE).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL(self):
+    def select_confi_preferences_audience_countries_cancel(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_CANCEL).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES(self):
+    def select_confi_preferences_audience_countries_yes(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_YES).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT(self):
+    def select_confi_preferences_audience_countries_not(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_COUNTRIES_NOT).click()
 
     #Seleccion de preferencias objetivos
-    def select_CONFI_PREFERENCES_OBJETIVE(self):
+    def select_confi_preferences_objetive(self):
         self.wait_for_element(self.CONFI_PREFERENCES_OBJETIVE).click()
 
-    def select_CONFI_PREFERENCES_OBJ_SELECT(self):
+    def select_confi_preferences_obj_select(self):
         self.wait_for_element(self.CONFI_PREFERENCES_OBJ_SELECT).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE(self):
+    def select_confi_preferences_audience_objetive_save(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_SAVE).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL(self):
+    def select_confi_preferences_audience_objetive_cancel(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_CANCEL).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES(self):
+    def select_confi_preferences_audience_objetive_yes(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_YES).click()
 
-    def select_CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT(self):
+    def select_confi_preferences_audience_objetive_not(self):
         self.wait_for_element(self.CONFI_PREFERENCES_AUDIENCE_OBJETIVE_NOT).click()
 
     #Configuración ayuda
-    def select_CONFIGURATION_HELP(self):
+    def select_configuration_help(self):
         self.wait_for_element(self.CONFIGURATION_HELP).click()
 
-    def select_CONFI_HELP_CALL(self):
+    def select_confi_help_call(self):
         self.wait_for_element(self.CONFI_HELP_CALL).click()
 
-    def select_CONFI_HELP_CHAT(self):
+    def select_confi_help_chat(self):
         self.wait_for_element(self.CONFI_HELP_CHAT).click()
 
-    def select_CONFI_HELP_POLICIES_TYC(self):
+    def select_confi_help_policies_tyc(self):
         self.wait_for_element(self.CONFI_HELP_POLICIES_TYC).click()
 
-    def select_CONFI_HELP_POLICIES_PRIVACY_POLICY(self):
+    def select_confi_help_policies_privacy_policy(self):
         self.wait_for_element(self.CONFI_HELP_POLICIES_PRIVACY_POLICY).click()
 
-    def select_CONFI_HELP_POLICIES_ISO(self):
+    def select_confi_help_policies_iso(self):
         self.wait_for_element(self.CONFI_HELP_POLICIES_ISO).click()
     
     

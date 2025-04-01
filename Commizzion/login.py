@@ -150,6 +150,4 @@ class loginpage(BasePage):
 
     def text_password_confirm(self, password):
         element = self.wait_for_element(self.CONFIRM_PASSWORD_NEW)
-        element.send_keys(password)
-
-#   
+        element.send_keys(password) 

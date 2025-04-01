@@ -93,142 +93,142 @@ class campaignspage(BasePage):
 
     #Seleccionar campañas
 
-    def select_CAMPAIGNS_AND_MARKET(self):
-        self.wait_for_element(self.CAMPAIGNS_AND_MARKET).click()
+    def select_campaigns_and_market(self): 
+        self.wait_for_element(self.CAMPAIGNS_AND_MARKET).click() 
 
-    def select_CAMPAIGNS(self):
-        self.wait_for_element(self.CAMPAIGNS).click()
+    def select_management(self): 
+        self.wait_for_element(self.CAMPAIGNS).click() 
 
-    #Poner filtros 
+    #poner filtros  
+    def select_filter_dropdown(self): 
+        self.wait_for_element(self.FILTER_DROPDOWN).click() 
 
-    def select_FILTER_DROPDOWN(self):
-        self.wait_for_element(self.FILTER_DROPDOWN).click()
+    def select_filter_highest_income(self): 
+        self.wait_for_element(self.FILTER_HIGHEST_INCOME).click() 
 
-    def select_FILTER_HIGHEST_INCOME(self):
-        self.wait_for_element(self.FILTER_HIGHEST_INCOME).click()
+    def select_filter_lowest_income(self): 
+        self.wait_for_element(self.FILTER_LOWEST_INCOME).click() 
 
-    def select_FILTER_LOWEST_INCOME(self):
-        self.wait_for_element(self.FILTER_LOWEST_INCOME).click()
+    def select_filter_highest_deposit(self): 
+        self.wait_for_element(self.FILTER_HIGHEST_DEPOSIT).click() 
 
-    def select_FILTER_HIGHEST_DEPOSIT(self):
-        self.wait_for_element(self.FILTER_HIGHEST_DEPOSIT).click()
+    def select_filter_lowest_deposit(self): 
+        self.wait_for_element(self.FILTER_LOWEST_DEPOSIT).click() 
 
-    def select_FILTER_LOWEST_DEPOSIT(self):
-        self.wait_for_element(self.FILTER_LOWEST_DEPOSIT).click()
+    def select_filter_clear(self): 
+        self.wait_for_element(self.FILTER_CLEAR).click() 
 
-    def select_FILTER_CLEAR(self):
-        self.wait_for_element(self.FILTER_CLEAR).click()
+    def select_filter_cpa(self): 
+        self.wait_for_element(self.FILTER_CPA).click() 
 
-    def select_FILTER_CPA(self):
-        self.wait_for_element(self.FILTER_CPA).click()
+    def select_filter_rs(self): 
+        self.wait_for_element(self.FILTER_RS).click() 
 
-    def select_FILTER_RS(self):
-        self.wait_for_element(self.FILTER_RS).click()
+    def select_filter_textarea_manual_click(self): 
+        self.wait_for_element(self.FILTER_TEXTAREA_MANUAL).click() 
 
-    def select_FILTER_TEXTAREA_MANUAL_click(self):
-        self.wait_for_element(self.FILTER_TEXTAREA_MANUAL).click()
+    def select_filter_textarea_manual(self, pais): 
+        element = self.wait_for_element(self.FILTER_TEXTAREA_MANUAL)  
+        element.clear()  
+        element.send_keys(pais) 
 
-    def select_FILTER_TEXTAREA_MANUAL(self, pais):
-        element = self.wait_for_element(self.FILTER_TEXTAREA_MANUAL) 
-        element.clear() 
-        element.send_keys(pais)
+    def select_filter_textarea_select(self): 
+        self.wait_for_element(self.FILTER_TEXTAREA_SELECT).click() 
 
-    def select_FILTER_TEXTAREA_SELECT(self):
-        self.wait_for_element(self.FILTER_TEXTAREA_SELECT).click()
+    def select_filter_textarea_x(self): 
+        self.wait_for_element(self.FILTER_TEXTAREA_X).click() 
 
-    def select_FILTER_TEXTAREA_X(self):
-        self.wait_for_element(self.FILTER_TEXTAREA_X).click()
-    
-    def select_FILTER_TEXTAREA_MANUAL_click(self):
-        self.wait_for_element(self.FILTER_TEXTAREA_MANUAL).click()
+    def select_filter_textarea_manual_click(self): 
+        self.wait_for_element(self.FILTER_TEXTAREA_MANUAL).click() 
 
-    def select_FILTER_PLACEHOLDER_STATUS(self):
-        self.wait_for_element(self.FILTER_PLACEHOLDER_STATUS).click()
+    def select_filter_placeholder_status(self): 
+        self.wait_for_element(self.FILTER_PLACEHOLDER_STATUS).click() 
 
-    def select_FILTER_PLACEHOLDER_COUNTRIES(self):
-        self.wait_for_element(self.FILTER_PLACEHOLDER_COUNTRIES).click()
+    def select_filter_placeholder_countries(self): 
+        self.wait_for_element(self.FILTER_PLACEHOLDER_COUNTRIES).click() 
 
-    def select_FILTER_PLACEHOLDER_OPERATOR(self):
-        self.wait_for_element(self.FILTER_PLACEHOLDER_OPERATOR).click()
+    def select_filter_placeholder_operator(self): 
+        self.wait_for_element(self.FILTER_PLACEHOLDER_OPERATOR).click() 
 
-    def select_FILTER_CHIPS(self):
-        self.wait_for_element(self.FILTER).click()
+    def select_filter_chips(self): 
+        self.wait_for_element(self.FILTER).click() 
 
-    def select_FILTER_CHIPS_X(self):
-        self.wait_for_element(self.FILTER_CHIPS_X).click()
+    def select_filter_chips_x(self): 
+        self.wait_for_element(self.FILTER_CHIPS_X).click() 
 
-    def select_FILTER_CHIPS_ACTIVE(self):
-        self.wait_for_element(self.FILTER_CHIPS_ACTIVE).click()
+    def select_filter_chips_active(self): 
+        self.wait_for_element(self.FILTER_CHIPS_ACTIVE).click() 
 
-    def select_FILTER_CHIPS_CLOSED(self):
-        self.wait_for_element(self.FILTER_CHIPS_CLOSED).click()
+    def select_filter_chips_closed(self): 
+        self.wait_for_element(self.FILTER_CHIPS_CLOSED).click() 
 
-    def select_FILTER_CHIPS_SUSPENDED(self):
-        self.wait_for_element(self.FILTER_CHIPS_SUSPENDED).click()
+    def select_filter_chips_suspended(self): 
+        self.wait_for_element(self.FILTER_CHIPS_SUSPENDED).click() 
 
-    def select_FILTER_CHIPS_STATUS(self):
-        self.wait_for_element(self.FILTER_CHIPS_STATUS).click()
+    def select_filter_chips_status(self): 
+        self.wait_for_element(self.FILTER_CHIPS_STATUS).click() 
 
-    def select_FILTER_CHIPS_ARGENTINA(self):
-        self.wait_for_element(self.FILTER_CHIPS_ARGENTINA).click()
+    def select_filter_chips_argentina(self): 
+        self.wait_for_element(self.FILTER_CHIPS_ARGENTINA).click() 
 
-    def select_FILTER_CHIPS_MORE_COUNTRIES(self):
-        self.wait_for_element(self.FILTER_CHIPS_MORE_COUNTRIES).click()
+    def select_filter_chips_more_countries(self): 
+        self.wait_for_element(self.FILTER_CHIPS_MORE_COUNTRIES).click() 
 
-    def select_FILTER_CHIPS_SPAIN(self):
-        self.wait_for_element(self.FILTER_CHIPS_SPAIN).click()
+    def select_filter_chips_spain(self): 
+        self.wait_for_element(self.FILTER_CHIPS_SPAIN).click() 
 
-    def select_FILTER_CHIPS_FEWER_COUNTRIES(self):
-        self.wait_for_element(self.FILTER_CHIPS_FEWER_COUNTRIES).click()
+    def select_filter_chips_fewer_countries(self): 
+        self.wait_for_element(self.FILTER_CHIPS_FEWER_COUNTRIES).click() 
 
-    def select_FILTER_CHIPS_COUNTRIES(self):
-        self.wait_for_element(self.FILTER_CHIPS_COUNTRIES).click()
+    def select_filter_chips_countries(self): 
+        self.wait_for_element(self.FILTER_CHIPS_COUNTRIES).click() 
 
-    def select_FILTER_CHIPS_888SPORT(self):
-        self.wait_for_element(self.FILTER_CHIPS_888SPORT).click()
+    def select_filter_chips_888sport(self): 
+        self.wait_for_element(self.FILTER_CHIPS_888SPORT).click() 
 
-    def select_FILTER_CHIPS_MORE_OPERATORS(self):
-        self.wait_for_element(self.FILTER_CHIPS_MORE_OPERATORS).click()
+    def select_filter_chips_more_operators(self): 
+        self.wait_for_element(self.FILTER_CHIPS_MORE_OPERATORS).click() 
 
-    def select_FILTER_CHIPS_1WIN(self):
-        self.wait_for_element(self.FILTER_CHIPS_1WIN).click()
+    def select_filter_chips_1win(self): 
+        self.wait_for_element(self.FILTER_CHIPS_1WIN).click() 
 
-    def select_FILTER_CHIPS_FEWER_OPERATORS(self):
-        self.wait_for_element(self.FILTER_CHIPS_FEWER_OPERATORS).click()
+    def select_filter_chips_fewer_operators(self): 
+        self.wait_for_element(self.FILTER_CHIPS_FEWER_OPERATORS).click() 
 
-    def select_FILTER_CHIPS_OPERATOR(self):
-        self.wait_for_element(self.FILTER_CHIPS_OPERATOR).click()
 
-    def select_FILTER_CHIPS_APPLY(self):
-        self.wait_for_element(self.FILTER_CHIPS_APPLY).click()
+    def select_filter_chips_operator(self): 
+        self.wait_for_element(self.FILTER_CHIPS_OPERATOR).click() 
 
-    #Adquirir link de campañas 
-    def select_SEE_DETAILS(self):
-        self.wait_for_element(self.SEE_DETAILS).click()
+    def select_filter_chips_apply(self): 
+        self.wait_for_element(self.FILTER_CHIPS_APPLY).click() 
 
-    def select_PROMOTE_CAMPAIGNS_LINK1(self):
-        self.wait_for_element(self.PROMOTE_CAMPAIGNS_LINK1).click()
+    #adquirir link de campañas  
+    def select_see_details(self): 
+        self.wait_for_element(self.SEE_DETAILS).click() 
 
-    def select_CHECK_TYC_LINK(self):
-        self.wait_for_element(self.CHECK_TYC_LINK).click()
+    def select_promote_campaigns_link1(self): 
+        self.wait_for_element(self.PROMOTE_CAMPAIGNS_LINK1).click() 
 
-    def select_BUTTON_CREATE_LINK(self):
-        self.wait_for_element(self.BUTTON_CREATE_LINK).click()
+    def select_check_tyc_link(self): 
+        self.wait_for_element(self.CHECK_TYC_LINK).click() 
 
-    def select_COPY_LINK(self):
-        self.wait_for_element(self.COPY_LINK).click()
+    def select_button_create_link(self): 
+        self.wait_for_element(self.BUTTON_CREATE_LINK).click() 
 
-    def select_BUTTON_FINISH(self):
-        self.wait_for_element(self.BUTTON_FINISH).click()
+    def select_copy_link(self): 
+        self.wait_for_element(self.COPY_LINK).click() 
 
-    def select_REQUEST_LINK2_DESDE_ELMAS(self):
-        self.wait_for_element(self.REQUEST_LINK2_DESDE_ELMAS).click()
+    def select_button_finish(self): 
+        self.wait_for_element(self.BUTTON_FINISH).click() 
 
-    def select_BUTTON_CLOSE(self):
-        self.wait_for_element(self.BUTTON_CLOSE).click()
+    def select_request_link2_desde_elmas(self): 
+        self.wait_for_element(self.REQUEST_LINK2_DESDE_ELMAS).click() 
 
-    def select_BUTTON_COPY_LINK(self):
-        self.wait_for_element(self.BUTTON_COPY_LINK).click()
+    def select_button_close(self): 
+        self.wait_for_element(self.BUTTON_CLOSE).click() 
 
-    def select_BUTTON_FINAL(self):
+    def select_button_copy_link(self): 
+        self.wait_for_element(self.BUTTON_COPY_LINK).click() 
+
+    def select_button_final(self): 
         self.wait_for_element(self.BUTTON_FINAL).click()

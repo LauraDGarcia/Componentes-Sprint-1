@@ -76,4 +76,3 @@ def test_form_signin(driver):
     signin.select_chip_objetive()
     signin.select_button_back()
     signin.select_button_finish()
-    #

@@ -130,99 +130,96 @@ class panelpage(BasePage):
 
     #Seleccionar de fecha manual 
 
-    def select_YEAR_PERIOD(self):
+    def select_year_period(self):
         self.wait_for_element(self.YEAR_PERIOD).click()
 
-    def select_FOLDOUT_YEAR(self):
+    def select_foldout_year(self):
         self.wait_for_element(self.FOLDOUT_YEAR).click()
 
-    def select_NEW_YEAR_PERIOD(self):
+    def select_new_year_period(self):
         self.wait_for_element(self.NEW_YEAR_PERIOD).click()
 
-    def select_MONTH_PERIOD(self):
+    def select_month_period(self):
         self.wait_for_element(self.MONTH_PERIOD).click()
 
-    def select_FOLDOUT_MONTH(self):
+    def select_foldout_month(self):
         self.wait_for_element(self.FOLDOUT_MONTH).click()
 
-    def select_MONTH_PERIOD_STARTING(self):
+    def select_month_period_starting(self):
         self.wait_for_element(self.MONTH_PERIOD_STARTING).click()
 
-    def select_DAY_PERIOD_STARTING(self):
+    def select_day_period_starting(self):
         self.wait_for_element(self.DAY_PERIOD_STARTING).click()  
 
-    def select_YEAR_PERIOD(self):
+    def select_year_period(self):
         self.wait_for_element(self.YEAR_PERIOD).click()
 
-    def select_FINAL_YEAR_PERIOD(self):
+    def select_final_year_period(self):
         self.wait_for_element(self.FINAL_YEAR_PERIOD).click() 
 
-    def select_SELECTOR_MONTH(self):
+    def select_selector_month(self):
         self.wait_for_element(self.MONTH_PERIOD).click()
 
-    def select_MONTH_PERIOD_FINAL(self):
+    def select_month_period_final(self):
         self.wait_for_element(self.MONTH_PERIOD_FINAL).click()  #####
 
-    def select_DAY_PERIOD_FINAL(self):
+    def select_day_period_final(self):
         self.wait_for_element(self.DAY_PERIOD_FINAL).click()
 
-    def select_BUTTON_OK_PERIOD(self):
+    def select_button_ok_period(self):
         self.wait_for_element(self.BUTTON_OK_PERIOD).click()
 
     #Targetas de metricas 
-    def select_CARD_METRICS_EARNINGS(self):
+    def select_card_metrics_earnings(self):
         self.wait_for_element(self.CARD_METRICS_EARNINGS).click()
 
-    def select_CARD_METRICS_AFFILIATE(self):
+    def select_card_metrics_affiliate(self):
         self.wait_for_element(self.CARD_METRICS_AFFILIATE).click()
 
-    def select_CARD_METRICS_REGISTRATIONS(self):
+    def select_card_metrics_registrations(self):
         self.wait_for_element(self.CARD_METRICS_REGISTRATIONS).click()
 
-    def select_CARD_METRICS_FTD(self):
+    def select_card_metrics_FTD(self):
         self.wait_for_element(self.CARD_METRICS_FTD).click()
 
-    def select_CARD_METRICS_CPA(self):
+    def select_card_metrics_CPA(self):
         self.wait_for_element(self.CARD_METRICS_CPA).click()
 
-    def select_TOOLTIPS_EARNINGS(self):
+    def select_tooltips_earnings(self):
         self.wait_for_element(self.TOOLTIPS_EARNINGS).click()
 
-    def select_TOOLTIPS_AFFILIATE(self):
+    def select_tooltips_affiliate(self):
         self.wait_for_element(self.TOOLTIPS_AFFILIATE).click()
 
-    def select_TOOLTIPS_REGISTRATIONS(self):
+    def select_tooltips_registrations(self):
         self.wait_for_element(self.TOOLTIPS_REGISTRATIONS).click()
 
-    def select_TOOLTIPS_FTD(self):
+    def select_tooltips_FTD(self):
         self.wait_for_element(self.TOOLTIPS_FTD).click()
 
-    def select_TOOLTIPS_CPA(self):
+    def select_tooltips_CPA(self):
         self.wait_for_element(self.TOOLTIPS_CPA).click()
 
-    def select_TOOLTIP_ACTUALIZATION(self):
+    def select_tooltips_actualization(self):
         self.wait_for_element(self.TOOLTIP_ACTUALIZATION).click()
 
-    def select_PREVIOUS_COMPARISON_EARNINGS(self):
+    def select_previous_comparison_earnings(self):
         self.wait_for_element(self.PREVIOUS_COMPARISON_EARNINGS).click()
 
-    def select_PREVIOUS_COMPARISON_AFFILIATE(self):
+    def select_previous_comparison_affiliate(self):
         self.wait_for_element(self.PREVIOUS_COMPARISON_AFFILIATE).click()
 
-    def select_PREVIOUS_COMPARISON_REGISTRATIONS(self):
+    def select_previous_comparison_registrations(self):
         self.wait_for_element(self.PREVIOUS_COMPARISON_REGISTRATIONS).click()
 
-    def select_PREVIOUS_COMPARISON_FTD(self):
+    def select_previous_comparison_FTD(self):
         self.wait_for_element(self.PREVIOUS_COMPARISON_FTD).click()
 
-    def select_PREVIOUS_COMPARISON_CPA(self):
+    def select_previous_comparison_CPA(self):
         self.wait_for_element(self.PREVIOUS_COMPARISON_CPA).click()
 
     #Error de diagrama
-
-    def select_button_REFRESH_DATA(self):
+    def select_button_refresh_data(self):
         self.wait_for_element(self.REFRESH_DATA).click()
-
-    #
 
     

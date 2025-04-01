@@ -281,5 +281,3 @@ class signinpage(BasePage):
 
     def select_button_finish(self):
         self.wait_for_element(self.SAVE_BUTTON).click
-
-    #

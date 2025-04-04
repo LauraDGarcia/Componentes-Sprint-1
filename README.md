@@ -50,26 +50,29 @@ Puedes cambiar chrome por firefox, edge o safari según el navegador que desees 
 ## 📁 Estructura del Proyecto
 
 📂 tests/
- ├── _init__.py 
+ ├── __init__.py                   
  ├── conftest.py                   # Configuración de pytest y drivers
  ├── test_campaigns.py             # Pruebas de campañas
  ├── test_login.py                 # Pruebas de inicio de sesión
  ├── test_signin.py                # Pruebas de registro
- ├── test_campaigns_management.py  # Pruebas de administrcion de campañas
- ├── test_configuration.py         # Pruebas de configuracion de la cuenta 
+ ├── test_campaigns_management.py  # Pruebas de administración de campañas
+ ├── test_configuration.py         # Pruebas de configuración de la cuenta 
  ├── test_panel.py                 # Pruebas de panel
 
 📂 Commizzion/
  ├── login.py                 # Página de inicio de sesión
  ├── signin.py                # Página de registro
  ├── campaigns.py             # Página de campañas
- ├── campaigns_management.py  # Página de administrcion de campañas
- ├── configuration.py         # Página de configuracion de la cuenta 
+ ├── campaigns_management.py  # Página de administración de campañas
+ ├── configuration.py         # Página de configuración de la cuenta 
  ├── panel.py                 # Página de panel
+
+📂 data/
+ ├── data.py                  # Archivo de datos
 
 📄 requirements.txt        # Lista de dependencias
 📄 README.md               # Documentación del proyecto
 
-🛠 Configuración Adicional
+## 🛠 Configuración Adicional
 
 Si necesitas ejecutar las pruebas en un navegador específico, puedes modificar el parámetro --browser en pytest o establecerlo en el archivo de configuración.

@@ -96,7 +96,7 @@ class campaignspage(BasePage):
     def select_campaigns_and_market(self): 
         self.wait_for_element(self.CAMPAIGNS_AND_MARKET).click() 
 
-    def select_management(self): 
+    def select_campaigns(self): 
         self.wait_for_element(self.CAMPAIGNS).click() 
 
     #poner filtros  

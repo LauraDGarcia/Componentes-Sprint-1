@@ -16,7 +16,7 @@ class panelpage(BasePage):
     FIELD_PERIOD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/span/fieldset/label/div/i")
     PERIOD_YESTERDAY = (By.XPATH, "(//span[contains(@class,'1')])[13]") #Sleccion de fechas ya establecidas
     PERIOD_LAST_MONTH = (By.XPATH, "(//span[contains(@class,'1')])[16]") #Sleccion de fechas ya establecidas
-    CUSTOM_DATE = (By.XPATH, "(//span[contains(@class,'1')])[17]") #Sleccion de fecha personalizada
+    CUSTOM_DATE = (By.XPATH, "//*[@id='select-mobile-overlay']/div/ul/li[6]/span") #Sleccion de fecha personalizada
     PREVIUS_MONTH = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/button[1]") #Atras con los meses 
     NEXT_MONTH = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/button[2]") #Adelante con los meses 
     PREVIUS_YEAR = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[2]/button[1]") #Atras con los años

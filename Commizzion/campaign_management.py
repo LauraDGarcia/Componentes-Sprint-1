@@ -8,7 +8,7 @@ class managementpage(BasePage):
     select_email = (By.XPATH, "//button[contains(.,'correo electrónico')]") 
     email = (By.XPATH, "//input[contains(@name,'email')]") 
     password = (By.XPATH, "//input[@type='password']") 
-    button_c = (By.CLASS_NAME, "page_captcha__aundn") 
+    button_c = (By.CLASS_NAME, "page_captcha__auNDN") 
     button_login = (By.XPATH, "//button[contains(@type,'submit')]") 
     #seleccionar la pestaña de campañas y admin 
     campaigns_and_market = (By.XPATH, "/html/body/div[1]/div[1]/section/ul[1]/li[2]/button") 

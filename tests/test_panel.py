@@ -16,7 +16,7 @@ def test_panel_actions(driver):
     panel.text_email(email_panel) # ingresar correo 
     panel.select_text_password()
     panel.text_password(password_panel)  # Ingresar contraseña
-    time.sleep(5)
+    time.sleep(20)
     panel.select_checkbox()  # Resolver CAPTCHA manualmente  buscar como no hacerlo manual
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable(panel.BUTTON_LOGIN))
     panel.select_button_login()

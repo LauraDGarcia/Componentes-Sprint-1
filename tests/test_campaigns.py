@@ -22,7 +22,7 @@ def test_campaigns(driver):
     campaigns.select_button_login()
     #seleccionar campañas
     campaigns.select_campaigns_and_market() 
-    campaigns.select_campaignst() 
+    campaigns.select_campaigns() 
     #selccion de filtros  
     campaigns.select_filter_dropdown() 
     campaigns.select_filter_highest_income() 

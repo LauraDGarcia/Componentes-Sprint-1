@@ -15,7 +15,9 @@ https://www.python.org/downloads/
 
 Pip suele venir preinstalado con Python. Puedes verificar si está instalado ejecutando:
 
+```
 pip --version
+```
 
 Si no está instalado, sigue las instrucciones aquí: https://pip.pypa.io/en/stable/installation/
 
@@ -23,27 +25,35 @@ Si no está instalado, sigue las instrucciones aquí: https://pip.pypa.io/en/sta
 
 Para evitar conflictos entre paquetes, se recomienda crear un entorno virtual:
 
+```
 python -m venv venv
 source venv/bin/activate  # En macOS/Linux
 venv\Scripts\activate    # En Windows
+```
 
 4. Instalación de Dependencias
 
 Ejecuta el siguiente comando para instalar todas las dependencias necesarias:
 
+```
 pip install -r requirements.txt
+```
 
 El archivo requirements.txt debe contener:
 
+```
 pytest
 selenium
 webdriver-manager
+```
 
 ## 🚀 EJECUCIÓN DE PRUEBAS
 
 Para ejecutar las pruebas, usa el siguiente comando:
 
+```
 pytest --browser chrome
+```
 
 Puedes cambiar chrome por firefox, edge o safari según el navegador que desees probar.
 

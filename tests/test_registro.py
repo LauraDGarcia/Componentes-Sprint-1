@@ -38,6 +38,7 @@ def test_form_signin(driver):
     signin.select_tyc()
     time.sleep(10)
     signin.select_button()
+    signin.select_dialog()
     signin.text_code()
     signin.get_code1(code1)
     signin.get_code2(code2)

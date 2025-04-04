@@ -13,17 +13,17 @@ class signinpage(BasePage):
     NAME = (By.XPATH, "//input[contains(@name,'name')]")
     LASTNAME = (By.XPATH, "//input[contains(@name,'lastName')]")
     EMAIL = (By.XPATH, "//input[contains(@name,'email')]")
-    PHONE_INDICATOR = (By.XPATH, "/html/body/div[1]/div/div/div/div[3]/section/form/div[1]/fieldset[1]/label/div")
+    PHONE_INDICATOR = (By.XPATH, "(//div[contains(@class,'7')])[5]")
     NUMBER_INDICATOR = (By.XPATH, "//li[contains(.,'+57')]")
     PHONE = (By.XPATH, "//input[contains(@name,'phoneNumber')]")
     PASSWORD = (By.XPATH, "//input[contains(@name,'password')]")
     CONFIRM_PASSWORD = (By.XPATH, "//input[contains(@name,'confirmPassword')]") 
     CLICKAFUERA = (By.XPATH, "//section[contains(@class,'3947j')]")  #######
-    CHECKBOX_C= (By.XPATH, "//*[@id='recaptcha-anchor']/div[1]") #######
-    TYC_CHECKBOX = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/fieldset[6]/label")
+    CHECKBOX_C= (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/div[2]") #######
+    TYC_CHECKBOX = (By.XPATH, "//input[@type='checkbox']")
     NEXT_BUTTON_TWO = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/button")
     #verificación de correo
-    DIALOG = (By.XPATH, "")
+    DIALOG = (By.XPATH, "//*[@id='_button--standard_9pqly_1']")
     CODEONE = (By.XPATH, "//input[contains(@id,'otp-input-0')]")
     CODETWO = (By.XPATH, "//input[contains(@id,'otp-input-1')]")
     CODETHREE = (By.XPATH, "//input[contains(@id,'otp-input-2')]")
@@ -150,6 +150,9 @@ class signinpage(BasePage):
         self.wait_for_element(self.NEXT_BUTTON_TWO).click()
 
     #Verificación de correo
+    def select_dialog(self):
+        self.wait_for_element(self.DIALOG).click()
+        
     def text_code(self):
         self.wait_for_element(self.CODEONE).click()
 

@@ -49,6 +49,7 @@ Puedes cambiar chrome por firefox, edge o safari según el navegador que desees 
 
 ## 📁 Estructura del Proyecto
 
+```
 📂 tests/
  ├── __init__.py                   
  ├── conftest.py                   # Configuración de pytest y drivers
@@ -72,6 +73,7 @@ Puedes cambiar chrome por firefox, edge o safari según el navegador que desees 
 
 📄 requirements.txt        # Lista de dependencias
 📄 README.md               # Documentación del proyecto
+```
 
 ## 🛠 Configuración Adicional
 

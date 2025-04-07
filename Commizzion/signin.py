@@ -34,7 +34,7 @@ class signinpage(BasePage):
     CODE_NOT_YET_RECEIVED = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[2]")
     NEXT_BUTTON_THREE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/div/button")
     #Stepper canal de comunicación
-    ADD_CHANNEL1 = (By.XPATH, "(//button[contains(@class,'q')])[6]")
+    ADD_CHANNEL1 = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div/div[1]/button")
     LINK_CHANNEL1 = (By.XPATH, "//input[@placeholder='https://']")
     CHANNEL_NAME =(By.XPATH, "(//input[@type='url'])[2]")
     ADD_CHANNEL_BUTTON = (By.XPATH, "//button[contains(@class,'VAYNO')]")

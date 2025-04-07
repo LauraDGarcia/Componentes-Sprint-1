@@ -16,7 +16,7 @@ def test_campaigns(driver):
     campaigns.text_email(email_Campaña) 
     campaigns.select_text_password()
     campaigns.text_password(password_campaña)
-    time.sleep(5)
+    time.sleep(20)
     campaigns.select_checkbox()  
     WebDriverWait(driver, 20).until(EC.element_to_be_clickable(campaigns.BUTTON_LOGIN))
     campaigns.select_button_login()

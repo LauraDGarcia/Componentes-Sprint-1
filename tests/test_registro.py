@@ -49,6 +49,7 @@ def test_form_signin(driver):
     time.sleep(60)
     signin.select_button3()
     #perfilamiento canales
+    time.sleep(20)
     signin.select_channel()
     signin.get_link_channel1(channel1_link)
     signin.get_name_channel1(name_channel1)

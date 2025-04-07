@@ -5,7 +5,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 class managementpage(BasePage):
     #Ingreso normal
-    select_email = (By.XPATH, "//button[contains(.,'correo electrónico')]") 
+    select_email = (By.XPATH, "(//button[contains(@class,'NyLay')])[1]") 
     email = (By.XPATH, "//input[contains(@name,'email')]") 
     password = (By.XPATH, "//input[@type='password']") 
     button_c = (By.CLASS_NAME, "page_captcha__auNDN") 

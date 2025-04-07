@@ -49,7 +49,7 @@ class signinpage(BasePage):
     NEXT_BUTTON_FIVE = (By.XPATH, "//button[contains(@class,'42')]")
     #Queremos saber más
     CHIPS = (By.XPATH, "(//span[contains(@class,'1')])[12]")
-    CHIP_OTHER_TWO = (By.XPATH, "(//span[contains(@class,'1')])[22]")
+    CHIP_OTHER_TWO = (By.XPATH, "(//span[contains(@class,'145')])[6]")
     CHIP_TEXT_FIELD = (By.XPATH, "//textarea[@maxlength='100']")
     BACK_BUTTON_TWO = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_SIX = (By.XPATH, "//button[contains(@class,'42')]")
@@ -228,8 +228,10 @@ class signinpage(BasePage):
     def select_tooltip_other(self):
         self.wait_for_element(self.TOOLTIP_OTHER_ONE).click()
 
-    def select_text_field(self, text):
+    def select_text_field(self):
         self.wait_for_element(self.TEXT_FIELD).click()
+
+    def select_text_field_text(self, text):
         element = self.wait_for_element(self.TEXT_FIELD)
         element.clear() 
         element.send_keys(text)
@@ -245,9 +247,11 @@ class signinpage(BasePage):
     def select_chips_other(self):
         self.wait_for_element(self.CHIP_OTHER_TWO).click()
 
-    def select_chips_text(self, text):
+    def select_chips_text(self):
         self.wait_for_element(self.CHIP_TEXT_FIELD).click()
-        element = self.wait_for_element(self.TEXT_FIELD)
+    
+    def select_chips_text_text(self, text):
+        element = self.wait_for_element(self.CHIP_TEXT_FIELD)
         element.clear() 
         element.send_keys(text)
 

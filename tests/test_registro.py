@@ -60,12 +60,14 @@ def test_form_signin(driver):
     #Perfilamiento tipo de usuario 
     signin.select_tooltip_user()
     signin.select_tooltip_other()
-    signin.select_text_field(textfield)
+    signin.select_text_field
+    signin.select_text_field_text(textfield)
     signin.select_next_button()
     #Perfilamiento de trafico
     signin.select_chip()
     signin.select_chips_other()
-    signin.select_chips_text(textfield)
+    signin.select_chips_text
+    signin.select_chips_text_text(textfield)
     signin.select_button_next_seven()
     #Perfilamiento de pais
     signin.select_countries_america()

@@ -1,11 +1,11 @@
 #Login
-email = "ditrouhugrecro-3032@yopmail.com"
-password = "Nomelase@123"
-recover = "Nomelase@123"
+email = "test866@inlaze.com"
+password = "Nomelase@123!"
+recover = "Nomelase@123!"
 new_password = "Nuevacontraseña@123!"
 
 #panel 
-email_panel = "test33@inlaze.com"
+email_panel = "test2@inlaze.com"
 password_panel = "Nomelase@123!"
 
 #Signin
@@ -25,8 +25,8 @@ name_channel1 = "Gatos carey"
 textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, trabajamos y nos comunicamos hoy."
 
 #Campañas
-email_Campaña = "ditrouhugrecro-3032@yopmail.com"
-password_campaña = "Nomelase@123"
+email_Campaña = "test866@inlaze.com"
+password_campaña = "Nomelase@123!"
 
 #Configuracion
 URL_channel = "https://www.facebook.com/groups/568416450009773/"
@@ -39,3 +39,10 @@ country_preference = "Argentina"
 email_configuracion = "test22@inlaze.com"
 password_configuracion = "Nomelase@123!"
 #
+#Wallet cuanta con saldo e historial
+email_wallet_y = "test2@inlaze.com"
+password_wallet_y = "Nomelase@123!"
+
+#Wallet sin saldo e historial
+email_wallet_n = "test866@inlaze.com"
+password_wallet_n = "Nomelase@123!"

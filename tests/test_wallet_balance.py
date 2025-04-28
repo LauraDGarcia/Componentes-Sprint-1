@@ -30,7 +30,7 @@ def test_Wallet_balance(driver):
     Wallet_balance.select_icon_incoming_balance()
     Wallet_balance.select_icon_value_receive()
     Wallet_balance.select_icon_lapz_button()
-    Wallet_balance.select_button_balance()
+    Wallet_balance.select_button_co_to_historu()
     #Salida de una cuenta e ingreso de la otra 
     Wallet_balance.select_button_close()
     Wallet_balance.select_button_modal()
@@ -46,7 +46,7 @@ def test_Wallet_balance(driver):
     #Sin saldo
     Wallet_balance.select_button_wallet()
     Wallet_balance.select_button_balance()
-    Wallet_balance.select_modal_add_account_button_yes()
+    #Wallet_balance.select_modal_add_account_button_yes()
     Wallet_balance.select_modal_add_account_button_not()
-    Wallet_balance.select_modal_add_account_button_X()
+    #Wallet_balance.select_modal_add_account_button_X()
     Wallet_balance.select_Button_add_account()

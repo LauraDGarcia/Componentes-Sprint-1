@@ -19,7 +19,7 @@ class managementpage(BasePage):
     filter_lowest_income = (By.XPATH, "(//span[contains(@class,'1')])[14]") 
     filter_highest_deposit = (By.XPATH, "(//span[contains(@class,'1')])[15]") 
     filter_lowest_deposit = (By.XPATH, "(//span[contains(@class,'1')])[16]") 
-    filter_cpa = (By.XPATH, "(//span[contains(.,'cpa')])[2]") 
+    filter_cpa = (By.XPATH, "(//span[contains(.,'CPA')])[1]") 
     filter_rs = (By.XPATH, "(//span[contains(.,'rs')])[2]") 
     filter_textarea_manual = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/fieldset/label/div/div/input") 
     filter_textarea_select = (By.XPATH, "(//span[contains(.,'mexico')])[1]") 

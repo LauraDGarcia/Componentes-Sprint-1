@@ -16,7 +16,6 @@ def test_recovery(driver):
     recovery = recoverypage(driver)
     recovery.navigate_home()  # Ir a la página de inicio de sesión
     recovery.select_button_email() 
-    recovery.select_email_button()
     recovery.select_recovery()
     recovery.select_mail()
     time.sleep(5)
@@ -37,5 +36,5 @@ def test_recovery(driver):
     recovery.text_new_password("NuevaContraseña@123")
     recovery.confirm_password()
     recovery.text_password_confirm("NuevaContraseña@123")
-    recovery.change_password()
+    recovery.change_password() #Aca genera error, no permite seguir, ya se reporto bug
     recovery.button_RETURN()

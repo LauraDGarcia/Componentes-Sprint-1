@@ -14,9 +14,9 @@ class paymentpage(BasePage):
     CLOSE_BOTTON = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div/div/button[3]")
     MODAL_CLOSE_SESION = (By.XPATH, "(//button[contains(@class,'39')])[2]")
     #Boton de wallet
-    button_wallet = (By.XPATH, "(//span[contains(@class,'i6Cf7')])[6]")
-    payment_history = (By. XPATH, "(//span[contains(@class,'i6Cf7')])[7]")
-    drop_down = (By. XPATH, "/html/body/div[1]/div[2]/div[2]/div/div/div[1]/div/div/h3/button/span/div/div[2]/i/svg")
+    button_wallet = (By.XPATH, "//span[contains(.,'Wallet')]")
+    payment_history = (By. XPATH, "/html/body/div[1]/div[1]/section/ul[1]/li[5]/ul/button[2]")
+    drop_down = (By. XPATH, "/html/body/div[1]/div[2]/div[2]/div/div/div[1]/div/div/h3/button/span/div/div[2]/i/svg/path")
     receipt = (By. XPATH, "/html/body/div[1]/div[2]/div[2]/div/div/div[1]/div/div/div/div/div/div/div/div/div[4]/button")
     expand_history_button = (By. XPATH, "(//button[contains(@class,'76')])[2]")
     request_help_button = (By. XPATH, "(//button[contains(@class,'76')])[3]")

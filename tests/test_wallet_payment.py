@@ -28,7 +28,7 @@ def test_Wallet_Pay(driver):
     wallet_pay.select_drop_down()
     wallet_pay.select_receipt()
     wallet_pay.select_expand_history_button()
-    wallet_pay.select_request_help_butto()
+    wallet_pay.select_request_help_button()
     #Salida de una cuenta e ingreso de la otra 
     wallet_pay.select_button_close()
     wallet_pay.select_button_modal()

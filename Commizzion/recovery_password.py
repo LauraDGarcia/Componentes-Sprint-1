@@ -46,9 +46,6 @@ class recoverypage(BasePage):
     def select_button_email(self):
         self.wait_for_element(self.SELECT_EMAIL).click()
 
-    def select_email_button(self):
-        self.wait_for_element(self.SELECT_EMAIL).click()
-
     def select_recovery(self):
         self.wait_for_element(self.FORGOT_PASSWORD).click()
 

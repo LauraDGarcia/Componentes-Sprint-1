@@ -15,15 +15,15 @@ class campaignspage(BasePage):
     CAMPAIGNS = (By.XPATH, "/html/body/div[1]/div[1]/section/ul[1]/li[2]/ul/button[1]")
     #Filtros de campañas
     FILTER_DROPDOWN = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/fieldset/label/div/i")
-    FILTER_HIGHEST_INCOME = (By.XPATH, "(//span[contains(@class,'1')])[12]")
-    FILTER_LOWEST_INCOME = (By.XPATH, "(//span[contains(@class,'1')])[13]")
-    FILTER_HIGHEST_DEPOSIT = (By.XPATH, "(//span[contains(@class,'1')])[14]")
-    FILTER_LOWEST_DEPOSIT = (By.XPATH, "(//span[contains(@class,'1')])[15]")
-    FILTER_CPA = (By.XPATH, "//span[@class='_label-medium_1mvuk_129 _typography_1mvuk_1'][contains(.,'CPA')]")
+    FILTER_HIGHEST_INCOME = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/fieldset/div/div/ul/li[1]/span")
+    FILTER_LOWEST_INCOME = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/fieldset/div/div/ul/li[2]/span")
+    FILTER_HIGHEST_DEPOSIT = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/fieldset/div/div/ul/li[3]/span")
+    FILTER_LOWEST_DEPOSIT = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[1]/fieldset/div/div/ul/li[4]/span")
+    FILTER_CPA = (By.XPATH, "(//span[contains(.,'CPA')])[1]")
     FILTER_RS = (By.XPATH, "(//span[contains(.,'RS')])[2]")
     FILTER_TEXTAREA_MANUAL = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/fieldset/label/div/div/input")
     FILTER_TEXTAREA_SELECT = (By.XPATH, "(//span[contains(.,'México')])[1]")
-    FILTER_PLACEHOLDER_STATUS = (By.XPATH, "(//span[@class='_label-large_1mvuk_113 _typography_1mvuk_1'])[6]")
+    FILTER_PLACEHOLDER_STATUS = (By.XPATH, "(//span[contains(@class,'129')])[16]")
     FILTER_PLACEHOLDER_COUNTRIES = (By.XPATH, "(//span[contains(@class,'1')])[38]")
     FILTER_PLACEHOLDER_OPERATOR = (By.XPATH, "(//span[contains(@class,'1')])[60]")
     FILTER_TEXTAREA_X = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/fieldset/label/div/i[2]")
@@ -46,17 +46,17 @@ class campaignspage(BasePage):
     FILTER_CHIPS_APPLY = (By.XPATH, "//button[contains(@class,'42')]")
     FILTER_CLEAR = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/button[1]") #/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/button[1]
     #Seleccionar y crear link de campañas
-    SEE_DETAILS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[2]/div[2]/div[2]/div/button")
+    SEE_DETAILS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[2]/div[4]/div[2]/div/button") #/html/body/div[1]/div[2]/div[2]/div[2]/div[2]/div[2]/div/button
     PROMOTE_CAMPAIGNS_LINK1 = (By.XPATH, "(//button[@type='button'])[2]")
     CHECK_TYC_LINK = (By.XPATH, "//span[@class='_checkbox__icon_1txi3_33']")
     BUTTON_CREATE_LINK = (By.XPATH, "(//button[contains(@class,'oy16')])[2]")
     BUTTON_BACK = (By.XPATH, "(//button[contains(@class,'oy16')])[1]")
     COPY_LINK = (By.XPATH, "//button[contains(@class,'9NXqg ')]")
     BUTTON_FINISH = (By.XPATH, "//button[contains(@class,'v0upz')]")
-    REQUEST_LINK2_DESDE_ELMAS = (By.XPATH, "/html/body/div[1]/div[2]/div[3]/article/div[2]/div[2]/div[2]")
-    BUTTON_CLOSE = (By.XPATH, "(//button[contains(@class,'oy16')])[1]")
-    BUTTON_COPY_LINK = (By.XPATH, "/html/body/div[1]/div[2]/div[3]/article/div[2]/div[2]/div[1]/button")
-    BUTTON_FINAL = (By.XPATH, "/html/body/div[1]/div[2]/div[3]/article/div[3]/div/div/button[1]")
+    REQUEST_LINK2_DESDE_ELMAS = (By.XPATH, "//div[@class='campaign-detials_link--container--icon--plus__Q1NVi']")
+    BUTTON_CLOSE = (By.XPATH, "/html/body/div[1]/div[2]/div[4]/article/div[3]/div/div/button[1]")
+    BUTTON_COPY_LINK = (By.XPATH, "//span[contains(.,'Copiar enlace')]")
+
 
     def navigate_home(self):
         self.go_to_page("https://qa-account-commizzion-vm.inlazetest.com/login")
@@ -202,6 +202,12 @@ class campaignspage(BasePage):
     def select_filter_chips_apply(self): 
         self.wait_for_element(self.FILTER_CHIPS_APPLY).click() 
 
+    def select_filter_chips_clear(self):
+        self.wait_for_element(self.FILTER_CHIPS_CLEAR).click()
+
+    def select_close_filter(self):
+        self.wait_for_element(self.CLOSE_FILTERS).click()
+
     #adquirir link de campañas  
     def select_see_details(self): 
         self.wait_for_element(self.SEE_DETAILS).click() 
@@ -219,10 +225,13 @@ class campaignspage(BasePage):
         self.wait_for_element(self.COPY_LINK).click() 
 
     def select_button_finish(self): 
-        self.wait_for_element(self.BUTTON_FINISH).click() 
+        self.wait_for_element(self.BUTTON_FINISH).click()
 
     def select_request_link2_desde_elmas(self): 
         self.wait_for_element(self.REQUEST_LINK2_DESDE_ELMAS).click() 
+
+    def select_button_back(self):
+        self.wait_for_element(self.BUTTON_BACK).click()
 
     def select_button_close(self): 
         self.wait_for_element(self.BUTTON_CLOSE).click() 

@@ -43,7 +43,7 @@ class signinpage(BasePage):
     EDIT_DETAILS1 = (By.XPATH, "(//button[contains(@class,'q')])[6]")
     #Tipo de usuario
     TOOLTIP_USER = (By.XPATH, "(//p[contains(@class,'')])[4]")
-    TOOLTIP_OTHER_ONE = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[1]/div[5]")
+    TOOLTIP_EMPRESA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div/div[3]")
     TEXT_FIELD = (By.XPATH, "//textarea[contains(@maxlength,'100')]")
     BACK_BUTTON_ONE = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_FIVE = (By.XPATH, "//button[contains(@class,'42')]")
@@ -54,10 +54,10 @@ class signinpage(BasePage):
     BACK_BUTTON_TWO = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_SIX = (By.XPATH, "//button[contains(@class,'42')]")
     #paises de audiencia
-    COUNTRIES_CHIPS_AMERICA = (By.XPATH, "(//span[contains(@class,'1')])[34]")
-    COUNTRIES_CHIPS_EUROPA = (By.XPATH, "(//span[contains(@class,'1')])[46]")
-    COUNTRIES_CHIPS_ASIA = (By.XPATH, "(//span[contains(@class,'1')])[54]")
-    COUNTRIES_CHIPS_AFRICA = (By.XPATH, "(//span[contains(@class,'1')])[56]")
+    COUNTRIES_CHIPS_AMERICA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[1]/div[2]/label[4]/span")
+    COUNTRIES_CHIPS_EUROPA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[2]/div[2]/label[5]/span")
+    COUNTRIES_CHIPS_ASIA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[3]/div[2]/label/span")
+    COUNTRIES_CHIPS_AFRICA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[4]/div[2]/label/span")
     BACK_BUTTON_THREE = (By.XPATH, "(//button[contains(@class,'76')])[2]")
     NEXT_BUTTON_SEVEN = (By.XPATH, "//button[contains(@class,'42')]")
     #Objetivos
@@ -226,7 +226,7 @@ class signinpage(BasePage):
         self.wait_for_element(self.TOOLTIP_USER).click()
 
     def select_tooltip_other(self):
-        self.wait_for_element(self.TOOLTIP_OTHER_ONE).click()
+        self.wait_for_element(self.TOOLTIP_EMPRESA).click()
 
     def select_text_field(self):
         self.wait_for_element(self.TEXT_FIELD).click()

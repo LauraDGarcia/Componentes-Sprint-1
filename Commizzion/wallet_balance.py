@@ -14,20 +14,20 @@ class balancepage(BasePage):
     CLOSE_BOTTON = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div/div/button[3]")
     MODAL_CLOSE_SESION = (By.XPATH, "(//button[contains(@class,'39')])[2]")
     #Boton de wallet
-    button_wallet = (By.XPATH, "(//span[contains(@class,'i6Cf7')])[6]")
-    button_balance = (By.XPATH, "(//span[contains(@class,'i6Cf7')])[7]")
+    button_wallet = (By.XPATH, "//span[contains(.,'Wallet')]")
+    button_balance = (By.XPATH, "/html/body/div[1]/div[1]/section/ul[1]/li[5]/ul/button[1]")
     #Cuenta con saldo
     button_eye_balance = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[1]/div[1]/button")
-    icon_total_balance = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div/i/svg")
-    icon_incoming_balance = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[2]/div[1]/div/i/svg")
-    icon_value_receive = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[3]/div[1]/div/i/svg")
+    icon_total_balance = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[1]/div[1]/div/i")
+    icon_incoming_balance = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[2]/div[1]/div/i")
+    icon_value_receive = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[3]/div[1]/div/i")
     icon_lapz_button = (By. XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div[1]/div[2]/div[3]/div[3]/div/div[2]/button")
     button_co_to_historu = (By. XPATH, "(//button[contains(@class,'76')])[1]")
     #Cuenta sin saldo
-    modal_add_account_button_yes = (By. XPATH, "/html/body/div[8]/div[3]/div/div[3]/button[2]")
-    modal_add_account_button_not = (By. XPATH, "/html/body/div[8]/div[3]/div/div[3]/button[1]")
-    modal_add_account_button_X = (By. XPATH, "/html/body/div[8]/div[3]/div/div[1]/div/button")
-    Button_add_account = (By. XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/div/div[2]/div[3]/div[3]/button")
+    modal_add_account_button_yes = (By. XPATH, "//button[contains(@class,'BdnJe')]")
+    modal_add_account_button_not = (By. XPATH, "//button[contains(@class,'ipDe5')]")
+    modal_add_account_button_X = (By. XPATH, "/html/body/div[7]/div[3]/div/div[1]/div/button/i")
+    Button_add_account = (By. XPATH, "//button[contains(@class,'QJRal')]")
 
     def navigate_home(self): 
         self.go_to_page("https://qa-account-commizzion-vm.inlazetest.com/login") 
@@ -85,7 +85,7 @@ class balancepage(BasePage):
     def select_icon_lapz_button(self):
         self.wait_for_element(self.icon_lapz_button).click()
 
-    def select_button_balance(self):
+    def select_button_co_to_historu(self):
         self.wait_for_element(self.button_co_to_historu).click()
 
     #Cuenta sin saldo

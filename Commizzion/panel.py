@@ -222,4 +222,6 @@ class panelpage(BasePage):
     def select_button_refresh_data(self):
         self.wait_for_element(self.REFRESH_DATA).click()
 
+    #Panel va a cambiar 
+
     

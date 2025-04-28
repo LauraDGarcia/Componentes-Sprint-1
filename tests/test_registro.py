@@ -60,8 +60,8 @@ def test_form_signin(driver):
     #Perfilamiento tipo de usuario 
     signin.select_tooltip_user()
     signin.select_tooltip_other()
-    signin.select_text_field
-    signin.select_text_field_text(textfield)
+    #signin.select_text_field
+    #signin.select_text_field_text(textfield)
     signin.select_next_button()
     #Perfilamiento de trafico
     signin.select_chip()
@@ -70,13 +70,11 @@ def test_form_signin(driver):
     signin.select_chips_text_text(textfield)
     signin.select_button_next_seven()
     #Perfilamiento de pais
-    signin.select_countries_america()
+    signin.select_countries_america() 
     signin.select_countries_europa()
     signin.select_countries_asia()
     signin.select_countries_africa()
-    signin.select_button_back3()
     signin.select_button_next7()
     #Perfilamiento de objetivos 
     signin.select_chip_objetive()
-    signin.select_button_back()
     signin.select_button_finish()

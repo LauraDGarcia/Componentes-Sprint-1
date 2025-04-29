@@ -11,7 +11,7 @@ password_panel = "Nomelase@123!"
 #Signin
 name = "pepe"
 lastname = "perez"
-new_email = "jr9o6z3tow@zvvzuv.com"
+new_email = "f7dptnxlpx@mkzaso.com"
 phone = "3216549870"
 new_password = "Nomelase@123!"
 code1 = "1"

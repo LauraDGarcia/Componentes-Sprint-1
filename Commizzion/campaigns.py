@@ -41,8 +41,8 @@ class campaignspage(BasePage):
     FILTER_CHIPS_OPERATOR = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/div/section/div[2]/div[3]/div[3]/div[1]/button")
     FILTER_CHIPS_888SPORT = (By.XPATH, "(//span[contains(.,'888sport')])[3]")
     FILTER_CHIPS_1WIN = (By.XPATH, "(//span[contains(@class,'34')])[82]")
-    FILTER_CHIPS_MORE_OPERATORS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/div/section/div[2]/div[3]/div[3]/button")
-    FILTER_CHIPS_FEWER_OPERATORS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/div/section/div[2]/div[3]/div[3]/button")
+    FILTER_CHIPS_MORE_OPERATORS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/div/section/div[2]/div[2]/div[3]/div[1]/button")
+    FILTER_CHIPS_FEWER_OPERATORS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/div/section/div[2]/div[2]/div[3]/div[1]/button")
     FILTER_CHIPS_APPLY = (By.XPATH, "//button[contains(@class,'42')]")
     FILTER_CLEAR = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/button[1]") #/html/body/div[1]/div[2]/div[2]/div[1]/div/div[2]/button[1]
     #Seleccionar y crear link de campañas

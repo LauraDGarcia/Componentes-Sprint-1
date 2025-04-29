@@ -72,7 +72,7 @@ def test_campaigns(driver):
     campaigns.select_filter_chips_x() 
     campaigns.select_filter_chips_argentina() 
     campaigns.select_filter_chips_x() 
-    campaigns.select_filter_chips_888sport() 
+    campaigns.select_filter_chips_888sport() #Otro erro
     campaigns.select_filter_chips_x() 
     time.sleep(10) 
     campaigns.select_filter_chips_active() 

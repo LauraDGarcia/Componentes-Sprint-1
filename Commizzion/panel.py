@@ -9,10 +9,13 @@ class panelpage(BasePage):
     PASSWORD = (By.XPATH, "//input[@type='password']")
     BUTTON_C = (By.CLASS_NAME, "page_captcha__auNDN")
     BUTTON_LOGIN = (By.XPATH, "//button[contains(@type,'submit')]")
-    VISUAL_EYE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/span/button")
-    ICON_BALANCE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/div/span[1]/span/i[2]")
-    ICON_EARNED = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/div/span[2]/span/i[2]") 
+    VISUAL_EYE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div/div[1]/div/i")
+    ICON_BALANCE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]/i")
+    ICON_EARNINGS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[1]/div/p[1]/i") 
     ICON_PAID = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/div/span[3]/span/i[2]")
+    ICON_REGISTRATIONS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[2]/div/p[1]/i") #NEUVO
+    ICON_FTD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[3]/div/p[1]/i") #NEUVO
+    ICON_CPA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[4]/div/p[1]/i") #NEUVO
     FIELD_PERIOD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/span/fieldset/label/div/i")
     PERIOD_YESTERDAY = (By.XPATH, "(//span[contains(@class,'1')])[13]") #Sleccion de fechas ya establecidas
     PERIOD_LAST_MONTH = (By.XPATH, "(//span[contains(@class,'1')])[16]") #Sleccion de fechas ya establecidas

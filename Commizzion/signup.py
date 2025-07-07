@@ -45,8 +45,8 @@ class signuppage(BasePage):
     NEXT_BUTTON_FOUR = (By.XPATH, "(//button[contains(@class,'42')])[2]")
     EDIT_DETAILS1 = (By.XPATH, "(//button[contains(@class,'q')])[6]")
     #Tipo de usuario
-    TOOLTIP_USER = (By.XPATH, "(//div[@class='user-type_row__yibJJ'])[1]")
-    TOOLTIP_EMPRESA = (By.XPATH, "/html/body/div[1]/div/div/main/div/div/div/section/div[2]/div/div/div[2]")
+    TOOLTIP_COMMUNITY = (By.XPATH, "(//div[@class='user-type_row__yibJJ'])[1]")
+    TOOLTIP_PERFORMANCE = (By.XPATH, "/html/body/div[1]/div/div/main/div/div/div/section/div[2]/div/div/div[2]")
     BACK_BUTTON_ONE = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_FIVE = (By.XPATH, "//button[contains(@class,'42')]")
     #Queremos saber más
@@ -236,11 +236,11 @@ class signuppage(BasePage):
 
     #Perfilamiento tipo de usuario 
 
-    def select_tooltip_user(self):
-        self.wait_for_element(self.TOOLTIP_USER).click()
+    def select_tooltip_community(self):
+        self.wait_for_element(self.TOOLTIP_COMMUNITY).click()
 
-    def select_tooltip_other(self):
-        self.wait_for_element(self.TOOLTIP_EMPRESA).click()
+    def select_tooltip_performance(self):
+        self.wait_for_element(self.TOOLTIP_PERFORMANCE).click()
 
     def select_next_button(self):
         self.wait_for_element(self.NEXT_BUTTON_FIVE).click()

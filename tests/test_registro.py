@@ -62,10 +62,8 @@ def test_form_signup(driver):
     signup.select_button_cancel()
     signup.select_button_next()
     #Perfilamiento tipo de usuario 
-    signup.select_tooltip_user()
-    signup.select_tooltip_other()
-    #signup.select_text_field
-    #signup.select_text_field_text(textfield)
+    signup.select_tooltip_community()
+    signup.select_tooltip_performance()
     signup.select_next_button()
     #Perfilamiento de trafico
     signup.select_chip()

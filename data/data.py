@@ -8,11 +8,12 @@ new_password = "Nuevacontraseña@123!"
 email_panel = "test2@inlaze.com"
 password_panel = "Nomelase@123!"
 
-#Signin
+#Signup
 name = "pepe"
 lastname = "perez"
 new_email = "f7dptnxlpx@mkzaso.com"
 phone = "3216549870"
+number = "11123456789"
 new_password = "Nomelase@123!"
 code1 = "1"
 code2 = "2"

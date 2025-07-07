@@ -7,7 +7,7 @@ from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.firefox.service import Service as FirefoxService
 from selenium.webdriver.edge.service import Service as EdgeService
 from Commizzion.login import loginpage
-from Commizzion.signin import signinpage
+from Commizzion.signup import signinpage
 from selenium.webdriver.chrome.options import Options
 
 

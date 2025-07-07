@@ -4,7 +4,7 @@ from .base_page import BasePage
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-class signinpage(BasePage):
+class signuppage(BasePage):
     #EMAIL_GOOGLE = (By.XPATH, "")
     #SELECT_ACCOUNT = (By.XPATH, "")
     #NEXT_BUTTON_ONE = (By.XPATH, "")
@@ -13,9 +13,12 @@ class signinpage(BasePage):
     NAME = (By.XPATH, "//input[contains(@name,'name')]")
     LASTNAME = (By.XPATH, "//input[contains(@name,'lastName')]")
     EMAIL = (By.XPATH, "//input[contains(@name,'email')]")
-    PHONE_INDICATOR = (By.XPATH, "(//div[contains(@class,'7')])[5]")
+    PHONE_INDICATOR = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/div[1]/fieldset[1]/label/div/div")
     NUMBER_INDICATOR = (By.XPATH, "//li[contains(.,'+57')]")
     PHONE = (By.XPATH, "//input[contains(@name,'phoneNumber')]")
+    DOC_TYPE = (By.XPATH, "/html/body/div[1]/div/div/main/div/div[2]/section/form/div[2]/fieldset[1]/label/div/div")
+    TYPE = (By.XPATH, "//span[contains(.,'ID nacional')]")
+    DOC_NUMBER = (By.XPATH, "//input[contains(@name,'documentNumber')]") 
     PASSWORD = (By.XPATH, "//input[contains(@name,'password')]")
     CONFIRM_PASSWORD = (By.XPATH, "//input[contains(@name,'confirmPassword')]") 
     CLICKAFUERA = (By.XPATH, "//section[contains(@class,'3947j')]")  #######
@@ -34,7 +37,7 @@ class signinpage(BasePage):
     CODE_NOT_YET_RECEIVED = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[2]")
     NEXT_BUTTON_THREE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/div/button")
     #Stepper canal de comunicación
-    ADD_CHANNEL1 = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div/div[1]/button")
+    ADD_CHANNEL1 = (By.XPATH, "//button[@class='_label-large_ifelm_129 _button_e9d1m_1 _button--filled_e9d1m_42 channel_buttonCard__Tep_q']")
     LINK_CHANNEL1 = (By.XPATH, "//input[@placeholder='https://']")
     CHANNEL_NAME =(By.XPATH, "(//input[@type='url'])[2]")
     ADD_CHANNEL_BUTTON = (By.XPATH, "//button[contains(@class,'VAYNO')]")
@@ -42,26 +45,25 @@ class signinpage(BasePage):
     NEXT_BUTTON_FOUR = (By.XPATH, "(//button[contains(@class,'42')])[2]")
     EDIT_DETAILS1 = (By.XPATH, "(//button[contains(@class,'q')])[6]")
     #Tipo de usuario
-    TOOLTIP_USER = (By.XPATH, "(//p[contains(@class,'')])[4]")
-    TOOLTIP_EMPRESA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div/div[3]")
-    TEXT_FIELD = (By.XPATH, "//textarea[contains(@maxlength,'100')]")
+    TOOLTIP_USER = (By.XPATH, "(//div[@class='user-type_row__yibJJ'])[1]")
+    TOOLTIP_EMPRESA = (By.XPATH, "/html/body/div[1]/div/div/main/div/div/div/section/div[2]/div/div/div[2]")
     BACK_BUTTON_ONE = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_FIVE = (By.XPATH, "//button[contains(@class,'42')]")
     #Queremos saber más
     CHIPS = (By.XPATH, "(//span[contains(@class,'1')])[12]")
-    CHIP_OTHER_TWO = (By.XPATH, "(//span[contains(@class,'145')])[6]")
+    CHIP_OTHER_TWO = (By.XPATH, "(//span[contains(@class,'145')])[4]")
     CHIP_TEXT_FIELD = (By.XPATH, "//textarea[@maxlength='100']")
     BACK_BUTTON_TWO = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_SIX = (By.XPATH, "//button[contains(@class,'42')]")
     #paises de audiencia
-    COUNTRIES_CHIPS_AMERICA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[1]/div[2]/label[4]/span")
-    COUNTRIES_CHIPS_EUROPA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[2]/div[2]/label[5]/span")
-    COUNTRIES_CHIPS_ASIA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[3]/div[2]/label/span")
-    COUNTRIES_CHIPS_AFRICA = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div[2]/div[4]/div[2]/label/span")
-    BACK_BUTTON_THREE = (By.XPATH, "(//button[contains(@class,'76')])[2]")
+    COUNTRIES_CHIPS_AMERICA = (By.XPATH, "(//span[contains(@class,'75')])[5]")
+    COUNTRIES_CHIPS_EUROPA = (By.XPATH, "(//span[contains(@class,'145')])[15]")
+    COUNTRIES_CHIPS_ASIA = (By.XPATH, "(//span[contains(@class,'145')])[19]")
+    COUNTRIES_CHIPS_AFRICA = (By.XPATH, "(//span[contains(@class,'145')])[18]")
+    BACK_BUTTON_THREE = (By.XPATH, "//button[contains(@class,'76')]")
     NEXT_BUTTON_SEVEN = (By.XPATH, "//button[contains(@class,'42')]")
     #Objetivos
-    CHIP_OBJETIVES = (By.XPATH, "/html/body/div[1]/div/div/div/div/div/section/div[2]/div/div/div[1]")
+    CHIP_OBJETIVES = (By.XPATH, "(//div[@class='objective_detailsCard__Ou4Yr '])[2]")
     BACK_BUTTON_FOUR = (By.XPATH, "//button[contains(@class,'76')]")
     SAVE_BUTTON = (By.XPATH, "//button[contains(@class,'42 finalize-button')]")
     
@@ -116,7 +118,19 @@ class signinpage(BasePage):
     def code_phone4(self, phone):
         element = self.wait_for_element(self.PHONE)
         element.clear() 
-        element.send_keys(phone)  
+        element.send_keys(phone) 
+
+    def select_doc_type(self):
+        self.wait_for_element(self.DOC_TYPE).click() 
+
+    def select_type(self):
+        self.wait_for_element(self.TYPE).click()
+
+    def select_doc_number(self, number):
+        self.wait_for_element(self.DOC_NUMBER).click()
+        element = self.wait_for_element(self.DOC_NUMBER)
+        element.clear()
+        element.send_keys(number)
 
     def select_password(self, new_password):
         self.wait_for_element(self.PASSWORD).click()
@@ -227,14 +241,6 @@ class signinpage(BasePage):
 
     def select_tooltip_other(self):
         self.wait_for_element(self.TOOLTIP_EMPRESA).click()
-
-    def select_text_field(self):
-        self.wait_for_element(self.TEXT_FIELD).click()
-
-    def select_text_field_text(self, text):
-        element = self.wait_for_element(self.TEXT_FIELD)
-        element.clear() 
-        element.send_keys(text)
 
     def select_next_button(self):
         self.wait_for_element(self.NEXT_BUTTON_FIVE).click()

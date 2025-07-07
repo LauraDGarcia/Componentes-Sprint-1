@@ -33,8 +33,8 @@ def test_recovery(driver):
     time.sleep(60)
     recovery.next_button()
     recovery.new_password()
-    recovery.text_new_password("NuevaContraseña@123")
+    recovery.text_new_password("Nomelase@123!")
     recovery.confirm_password()
-    recovery.text_password_confirm("NuevaContraseña@123")
+    recovery.text_password_confirm("Nomelase@123!")
     recovery.change_password() #Aca genera error, no permite seguir, ya se reporto bug
     recovery.button_RETURN()

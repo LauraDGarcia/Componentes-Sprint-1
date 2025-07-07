@@ -11,8 +11,8 @@ class loginpage(BasePage):
     SELECT_EMAIL = (By.XPATH, "(//button[contains(@class,'NyLay')])[1]")
     EMAIL = (By.XPATH, "//input[contains(@name,'email')]")
     PASSWORD = (By.XPATH, "//input[@type='password']")
-    BUTTON_CATPCHA = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/div[2]")
-    BUTTON_LOGIN = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/section/form/button")
+    BUTTON_CATPCHA = (By.XPATH, "//div[@class='recaptcha-checkbox-border']")
+    BUTTON_LOGIN = (By.XPATH, "//button[contains(@class,'42')]")
     CLOSE_BOTTON = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div/div/button[3]")
     MODAL_CLOSE_SESION = (By.XPATH, "(//button[contains(@class,'39')])[2]")
 

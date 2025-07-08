@@ -11,49 +11,37 @@ class panelpage(BasePage):
     BUTTON_LOGIN = (By.XPATH, "//button[contains(@type,'submit')]")
     VISUAL_EYE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div/div[1]/div/i")
     ICON_BALANCE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/div/div/div[2]/div[1]/i")
-    ICON_EARNINGS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[1]/div/p[1]/i") 
-    ICON_PAID = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/div/span[3]/span/i[2]")
-    ICON_REGISTRATIONS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[2]/div/p[1]/i") #NEUVO
-    ICON_FTD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[3]/div/p[1]/i") #NEUVO
-    ICON_CPA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[4]/div/p[1]/i") #NEUVO
-    FIELD_PERIOD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/span/fieldset/label/div/i")
-    PERIOD_YESTERDAY = (By.XPATH, "(//span[contains(@class,'1')])[13]") #Sleccion de fechas ya establecidas
-    PERIOD_LAST_MONTH = (By.XPATH, "(//span[contains(@class,'1')])[16]") #Sleccion de fechas ya establecidas
-    CUSTOM_DATE = (By.XPATH, "//*[@id='select-mobile-overlay']/div/ul/li[6]/span") #Sleccion de fecha personalizada
+    FIELD_PERIOD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/fieldset/label/div/i")
+    PERIOD_TODAY = (By.XPATH, "(//span[contains(@class,'1')])[13]") #Sleccion de fechas ya establecidas SE CAMBIO EL NOMBRE
+    PERIOD_30DAYS = (By.XPATH, "(//span[contains(@class,'1')])[16]") #Sleccion de fechas ya establecidas SE CAMBIO EL NOMBRE
+    CUSTOM_DATE = (By.XPATH, "(//span[contains(@class,'129')])[15]") #Sleccion de fecha personalizada
     PREVIUS_MONTH = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/button[1]") #Atras con los meses 
     NEXT_MONTH = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/button[2]") #Adelante con los meses 
     PREVIUS_YEAR = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[2]/button[1]") #Atras con los años
     NEXT_YEAR = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[2]/button[2]") #Adelante con los años
     YEAR_PERIOD = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[2]/span") #Seleccion del año y año final 
-    FOLDOUT_YEAR = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[2]/i") #Desplegable del año
     NEW_YEAR_PERIOD = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[2]/div[98]") #Seleccion del año donde se seleccionara una fecha inicial
     FINAL_YEAR_PERIOD = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[2]/div[104]") #Año final
     MONTH_PERIOD = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/span") #Seleccion del mes
-    FOLDOUT_MONTH = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[1]/div[1]/i") #Desplegable del mes
     MONTH_PERIOD_STARTING = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[2]/div[2]") #Slecccion del mes inicial
     MONTH_PERIOD_FINAL = (By.XPATH, "//*[@id='calendar-mobile-overlay']/div/div[2]/div[1]") #Seleccion del mes final
-    DAY_PERIOD_STARTING = (By.XPATH, "(//div[contains(@class,'27')])[3]") #Dia inicial en enero
-    DAY_PERIOD_FINAL = (By.XPATH, "(//div[contains(@class,'27')])[16]") #Dia final en febrero
-    BUTTON_OK_PERIOD = (By.XPATH, "(//span[contains(.,'OK')])[2]") #Boton de okay para seleccionar la fecha
-    BUTTON_CANCEL_PERIOD = (By.XPATH, "(//span[contains(@class,'10')])[3]")#Bopton de cancelar
-    BUTTON_RESTORE_PERIOD = (By.XPATH, "(//span[contains(@class,'10')])[2]") #Boton de restaurar 
+    DAY_PERIOD_STARTING = (By.XPATH, "(//span[contains(@class,'21')])[9]") #Dia inicial en enero
+    DAY_PERIOD_FINAL = (By.XPATH, "(//span[contains(@class,'21')])[34]") #Dia final en febrero
+    BUTTON_OK_PERIOD = (By.XPATH, "(//button[@type='button'])[7]") #Boton de okay para seleccionar la fecha
+    BUTTON_CANCEL_PERIOD = (By.XPATH, "(//button[@type='button'])[6]")#Bopton de cancelar
+    BUTTON_RESTORE_PERIOD = (By.XPATH, "(//button[contains(@class,'109')])[1]") #Boton de restaurar 
     CARD_METRICS_EARNINGS = (By.XPATH, "(//div[contains(@class,'5vZ9P')])[1]") #tarjetas de metricas 
     CARD_METRICS_AFFILIATE = (By.XPATH, "(//div[contains(@class,'5vZ9P')])[2]")
     CARD_METRICS_REGISTRATIONS = (By.XPATH, "(//div[contains(@class,'5vZ9P')])[3]")
     CARD_METRICS_FTD = (By.XPATH, "(//div[contains(@class,'5vZ9P')])[4]")
     CARD_METRICS_CPA = (By.XPATH, "(//div[contains(@class,'5vZ9P')])[5]")
-    TOOLTIPS_EARNINGS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[1]/div/p[1]/i")
-    TOOLTIPS_AFFILIATE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[2]/div/p[1]/i")
-    TOOLTIPS_REGISTRATIONS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[3]/div/p[1]/i")
-    TOOLTIPS_FTD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[4]/div/p[1]/i")
-    TOOLTIPS_CPA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[5]/div/p[1]/i")
-    TOOLTIP_ACTUALIZATION = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[1]/span/span/i/svg") ####"$##"
-    REFRESH_DATA = (By.XPATH, "//span[contains(.,'Refresh data')]")
-    PREVIOUS_COMPARISON_EARNINGS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[1]/div/span/i")
-    PREVIOUS_COMPARISON_AFFILIATE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[2]/div/span/i")
-    PREVIOUS_COMPARISON_REGISTRATIONS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[3]/div/span/i")
-    PREVIOUS_COMPARISON_FTD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[4]/div/span/i")
-    PREVIOUS_COMPARISON_CPA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[2]/button[5]/div/span/i")
+    TOOLTIPS_EARNINGS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[1]/div/p[1]/i")
+    TOOLTIPS_AFFILIATE = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/span/div/div/div/span[3]/span/i[2]")
+    TOOLTIPS_REGISTRATIONS = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[2]/div/p[1]/i")
+    TOOLTIPS_FTD = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[3]/div/p[1]/i")
+    TOOLTIPS_CPA = (By.XPATH, "/html/body/div[1]/div[2]/div[2]/div/div[3]/button[4]/div/p[1]/i")
+    TOOLTIP_ACTUALIZATION = (By.XPATH, "/html/body/div[1]/div[2]/div[1]/div/div[2]/div/i") ####"$##"
+    CLEAR = (By.XPATH, "(//button[contains(@class,'76')])[1]")
 
     def navigate_home(self):
         self.go_to_page("https://qa-account-commizzion-vm.inlazetest.com/login") #YUna cuenta ya ingresada, si no poner los del login
@@ -95,21 +83,15 @@ class panelpage(BasePage):
     def icon_balance_wallet(self):
         self.wait_for_element(self.ICON_BALANCE).click()
 
-    def icon_earned_wallet(self):
-        self.wait_for_element(self.ICON_EARNED).click()
-
-    def icon_paid_wallet(self):
-        self.wait_for_element(self.ICON_PAID).click()
-
     def main_period(self):
         self.wait_for_element(self.FIELD_PERIOD).click()
 
      #Seleccion de fechas predeterminadas
-    def select_period_yesterday(self):
-        self.wait_for_element(self.PERIOD_YESTERDAY).click()
+    def select_period_today(self):
+        self.wait_for_element(self.PERIOD_TODAY).click()
 
-    def select_period_last_month(self):
-        self.wait_for_element(self.PERIOD_LAST_MONTH).click()
+    def select_period_30days(self):
+        self.wait_for_element(self.PERIOD_30DAYS).click()
 
 
     #Seleccion de fecha por botones
@@ -117,7 +99,7 @@ class panelpage(BasePage):
         self.wait_for_element(self.CUSTOM_DATE).click()
 
     def select_period_yesterday(self):
-        self.wait_for_element(self.PERIOD_YESTERDAY).click()
+        self.wait_for_element(self.PERIOD_TODAY).click()
 
     def select_previous_month(self):
         self.wait_for_element(self.PREVIUS_MONTH).click()
@@ -136,17 +118,11 @@ class panelpage(BasePage):
     def select_year_period(self):
         self.wait_for_element(self.YEAR_PERIOD).click()
 
-    def select_foldout_year(self):
-        self.wait_for_element(self.FOLDOUT_YEAR).click()
-
     def select_new_year_period(self):
         self.wait_for_element(self.NEW_YEAR_PERIOD).click()
 
     def select_month_period(self):
         self.wait_for_element(self.MONTH_PERIOD).click()
-
-    def select_foldout_month(self):
-        self.wait_for_element(self.FOLDOUT_MONTH).click()
 
     def select_month_period_starting(self):
         self.wait_for_element(self.MONTH_PERIOD_STARTING).click()
@@ -164,7 +140,7 @@ class panelpage(BasePage):
         self.wait_for_element(self.MONTH_PERIOD).click()
 
     def select_month_period_final(self):
-        self.wait_for_element(self.MONTH_PERIOD_FINAL).click()  #####
+        self.wait_for_element(self.MONTH_PERIOD_FINAL).click()
 
     def select_day_period_final(self):
         self.wait_for_element(self.DAY_PERIOD_FINAL).click()
@@ -206,25 +182,10 @@ class panelpage(BasePage):
     def select_tooltips_actualization(self):
         self.wait_for_element(self.TOOLTIP_ACTUALIZATION).click()
 
-    def select_previous_comparison_earnings(self):
-        self.wait_for_element(self.PREVIOUS_COMPARISON_EARNINGS).click()
-
-    def select_previous_comparison_affiliate(self):
-        self.wait_for_element(self.PREVIOUS_COMPARISON_AFFILIATE).click()
-
-    def select_previous_comparison_registrations(self):
-        self.wait_for_element(self.PREVIOUS_COMPARISON_REGISTRATIONS).click()
-
-    def select_previous_comparison_FTD(self):
-        self.wait_for_element(self.PREVIOUS_COMPARISON_FTD).click()
-
-    def select_previous_comparison_CPA(self):
-        self.wait_for_element(self.PREVIOUS_COMPARISON_CPA).click()
-
     #Error de diagrama
-    def select_button_refresh_data(self):
-        self.wait_for_element(self.REFRESH_DATA).click()
+    def select_button_clear(self):
+        self.wait_for_element(self.CLEAR).click()
 
-    #Panel va a cambiar 
+    
 
     

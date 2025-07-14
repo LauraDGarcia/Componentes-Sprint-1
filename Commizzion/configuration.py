@@ -372,6 +372,9 @@ class configurationpage(BasePage):
     def select_confi_profile_dialog_contact_location_not(self):
         self.wait_for_element(self.CONFI_PROFILE_DIALOG_CONTACT_LOCATION_NOT).click()
 
+    #Seleccion de cuentas
+    
+    
     #Seleccion de canales
     def select_configuration_channelS(self):
         self.wait_for_element(self.CONFIGURATION_CHANNELS).click()

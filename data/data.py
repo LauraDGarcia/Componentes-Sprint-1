@@ -2,7 +2,6 @@
 email = "test866@inlaze.com"
 password = "Nomelase@123!"
 recover = "Nomelase@123!"
-new_password = "Nuevacontraseña@123!"
 
 #panel 
 email_panel = "test2@inlaze.com"
@@ -25,12 +24,12 @@ channel1_link = "https://x.com/KatsCarey"
 name_channel1 = "Gatos carey"
 textfield = "La tecnología avanza rápido, cambiando la forma en que vivimos, trabajamos y nos comunicamos hoy."
 
-#Campañas
-email_Campaña = "test866@inlaze.com"
-password_campaña = "Nomelase@123!"
+#recuperar contrasela
+contraseñaña = "test22@inlaze.com"
+new_password = "Nuevacontraseña@123!"
 
 #Configuracion
-URL_channel = "https://www.facebook.com/groups/568416450009773/"
+URL_channel = "https://www.facebook.com/groups/568416450009773/"   
 name_channel = "canal1"
 email_confi = "treitrocramoille-5406@yopmail.com"
 password_confi = "Nuevacontraseña@123!"
@@ -47,3 +46,7 @@ password_wallet_y = "Nomelase@123!"
 #Wallet sin saldo e historial
 email_wallet_n = "test866@inlaze.com"
 password_wallet_n = "Nomelase@123!"
+
+#cuentas 
+email_cuentas = "test99@inlaze.com"
+password_ = "Nomelase@123!"

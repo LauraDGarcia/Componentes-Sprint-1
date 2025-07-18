@@ -1,4 +1,4 @@
-from Commizzion.configuration import configurationpage
+from Commizzion.configuration_profile import configurationpage
 from data.data import email_configuracion
 from data.data import password_configuracion
 from data.data import email_confi 
@@ -88,38 +88,3 @@ def test_configuration(driver):
     confi.select_confi_profile_save_contact_location() 
     confi.select_confi_profile_cancel_contact_location() 
     confi.select_confi_profile_dialog_contact_location_yes() 
-    #seleccion de canales 
-    confi.select_configuration_channelS() 
-    confi.select_confi_channels_3_points() 
-    confi.select_confi_channels_edit_channel1_button() 
-    confi.select_confi_channels_edit_url_x() 
-    confi.select_confi_channels_edit_url(URL_channel) 
-    confi.select_confi_channels_edit_name_x() 
-    confi.select_confi_channels_edit_name(name_channel) 
-    confi.select_confi_channels_edit_save() 
-    confi.select_confi_channels_edit_channel1_yes() 
-    confi.select_confi_channels_add_new_channel() 
-    confi.select_confi_channels_new_url_click() 
-    confi.select_confi_channels_new_url(url_new_channel) 
-    confi.select_confi_channels_new_name_click() 
-    confi.select_confi_channels_new_name(name_new_channel) 
-    confi.select_confi_channels_save_new_channel() 
-    confi.select_confi_channels_delete_channel() 
-    confi.select_confi_channels_delete_channel_yes() 
-    #seleccion de preferencias paises 
-    confi.select_configuration_preferences() 
-    confi.select_confi_preferences_audience_countries() 
-    confi.select_confi_preferences_audience_countries_x() 
-    confi.select_confi_preferences_audience_countries_placeholder_click() 
-    confi.select_confi_preferences_audience_countries_placeholder(country_preference) 
-    confi.select_confi_preferences_audience_countries_more_countries() 
-    confi.select_confi_preferences_audience_countries_chips() 
-    confi.select_confi_preferences_audience_countries_save() 
-    confi.select_confi_preferences_audience_countries_yes() 
-    #seleccion de preferencias objetivos 
-    confi.select_confi_preferences_objetive() 
-    confi.select_confi_preferences_obj_select() 
-    confi.select_confi_preferences_audience_objetive_save() 
-    confi.select_confi_preferences_audience_objetive_yes() 
-    #configuración ayuda 
-    confi.select_configuration_help() 

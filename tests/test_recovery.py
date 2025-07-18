@@ -1,6 +1,6 @@
 from Commizzion.recovery_password import recoverypage
 from data.data import email
-from data.data import password
+from data.data import new_password
 from data.data import code1
 from data.data import code2
 from data.data import code3
@@ -31,10 +31,8 @@ def test_recovery(driver):
     recovery.get_code5(code5)
     recovery.get_code6(code6) #Codigo que llega al email
     time.sleep(60)
-    recovery.next_button()
     recovery.new_password()
-    recovery.text_new_password("Nomelase@123!")
+    recovery.text_new_password(new_password)
     recovery.confirm_password()
-    recovery.text_password_confirm("Nomelase@123!")
-    recovery.change_password() #Aca genera error, no permite seguir, ya se reporto bug
-    recovery.button_RETURN()
+    recovery.text_password_confirm(new_password)
+    recovery.change_password() 

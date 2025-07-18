@@ -11,7 +11,7 @@ class recoverypage(BasePage):
     SELECT_EMAIL = (By.XPATH, "(//button[contains(@class,'NyLay')])[1]")
     FORGOT_PASSWORD = (By.XPATH, "//a[contains(@class,'yGGaR')]")
     RECOVERY_EMAIL = (By.XPATH, "//input[@placeholder='abc@mail.com']")
-    SEND_CODE_button = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")
+    SEND_CODE_button = (By.XPATH, "//button[contains(@class,'42')]")
     DIALOG = (By.XPATH, "//*[@id='_button--standard_9pqly_1']")
     CODEONE = (By.XPATH, "//input[contains(@id,'otp-input-0')]")
     CODETWO = (By.XPATH, "//input[contains(@id,'otp-input-1')]")
@@ -19,13 +19,13 @@ class recoverypage(BasePage):
     CODEFOUR = (By.XPATH, "//input[contains(@id,'otp-input-3')]")
     CODEFIVE = (By.XPATH, "//input[contains(@id,'otp-input-4')]")
     CODESIX = (By.XPATH, "//input[contains(@id,'otp-input-5')]")
-    RESEND_CODE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[1]")
-    CODE_NOT_YET_RECEIVED = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/article/button[2]")
-    NEXT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/button[1]")
-    PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[1]/label/div/div/input")
-    CONFIRM_PASSWORD_NEW = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/fieldset[2]/label/div/div/input")
-    CHANGE = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/form/button")
-    RETURN = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/button[2]")
+    RESEND_CODE = (By.XPATH, "//button[contains(@class,'42')]")
+    CODE_NOT_YET_RECEIVED = (By.XPATH, "//span[contains(@class,'VowFu')]")
+    #NEXT_BUTTON = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/button[1]")
+    PASSWORD_NEW = (By.XPATH, "(//input[contains(@type,'password')])[1]")
+    CONFIRM_PASSWORD_NEW = (By.XPATH, "(//input[@type='password'])[2]")
+    CHANGE = (By.XPATH, "//button[contains(@class,'42')]")
+    #RETURN = (By.XPATH, "/html/body/div[1]/div/div/div/div[2]/div/div/button[2]")
 
 
     def navigate_home(self):
@@ -95,9 +95,6 @@ class recoverypage(BasePage):
         element = self.wait_for_element(self.CODESIX)
         element.clear() 
         element.send_keys(code6)
-        
-    def next_button(self):    
-        self.wait_for_element(self.NEXT_BUTTON).click()
 
     def new_password(self):
         self.wait_for_element(self.PASSWORD_NEW).click()
@@ -115,6 +112,3 @@ class recoverypage(BasePage):
 
     def change_password(self):
         self.wait_for_element(self.CHANGE).click()
-
-    def button_RETURN(self):
-        self.wait_for_element(self.RETURN).click()

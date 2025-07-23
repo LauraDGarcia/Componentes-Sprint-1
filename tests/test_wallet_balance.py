@@ -46,7 +46,7 @@ def test_Wallet_balance(driver):
     #Sin saldo
     Wallet_balance.select_button_wallet()
     Wallet_balance.select_button_balance()
-    #Wallet_balance.select_modal_add_account_button_yes()
+    #+Wallet_balance.select_modal_add_account_button_yes()
     Wallet_balance.select_modal_add_account_button_not()
     #Wallet_balance.select_modal_add_account_button_X()
     Wallet_balance.select_Button_add_account()
